@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  admission_date: 2023-03-29
+  admission_number: MyString
+  form: 1
+
+two:
+  admission_date: 2023-03-29
+  admission_number: MyString
+  form: 1
