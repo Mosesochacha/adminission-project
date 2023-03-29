@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Loading from "./loading/loader";
+import Loading from "../loading/loader";
 
 export default function Login({ exportValue }) {
   const [password, setPassword] = useState("");
@@ -65,7 +65,9 @@ export default function Login({ exportValue }) {
   }
 
   return (
+
     <center className="mt-5 ">
+      <h1>Login</h1>
       <div className="sign_in">
         <form onSubmit={handleLogin}>
           <div className="card " style={{ width: "16rem" }}>

@@ -2,9 +2,11 @@
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import Loading from './components/loading/loader';
-import Login from './components/login';
-import Register from './components/register';
+import Login from './components/User/login';
+import Register from './components/User/register';
 import Logout from './components/User/logout';
+import Registration from './components/forminput/Registration';
+import Courses from './components/forminput/Courses';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
      <Login/>
      <Register/>
      <Logout/>
+     <Registration/>
+     <Courses/>
       </Route>
       </BrowserRouter>
    

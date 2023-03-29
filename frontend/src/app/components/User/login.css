@@ -1,0 +1,37 @@
+sign_in {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0px 0px 5px grey;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(122, 118, 118);
+  }
+  
+  button {
+    background-color: rgb(162, 162, 226);
+    color: rgb(209, 198, 198);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

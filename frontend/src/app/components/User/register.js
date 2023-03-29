@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Loading from "./loading/loader";
+import Loading from "../loading/loader";
 
 
 export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [location, setLocation] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [message, setMessage] = useState("");
@@ -31,7 +30,6 @@ export default function Register() {
         body: JSON.stringify({
           name,
           email,
-          location,
           password,
           password_confirmation: passwordConfirmation,
         }),
@@ -55,6 +53,7 @@ export default function Register() {
       <div className="d-flex flex-column mb-3" style={{ width: "20rem" }}>
         <div className="card ">
         <form onSubmit={handleSubmit} className="d-flex flex-column mb-3">
+            <h1>Register</h1>
             <label>USERNAME</label>
             <input
               placeholder="ENTER FULL NAME"
@@ -63,13 +62,7 @@ export default function Register() {
               onChange={(e) => setName(e.target.value)}
             />
 
-            <label>Location:</label>
-            <input
-              placeholder="ENTER YOUR LOCATION"
-              type="text"
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
+           
 
             <label>Email: </label>
             <input
