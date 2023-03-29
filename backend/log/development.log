@@ -6031,3 +6031,815 @@ Processing by TeachersController#index as HTML
 Completed 200 OK in 28ms (Views: 14.9ms | ActiveRecord: 0.7ms | Allocations: 24344)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.3ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Rana"], ["last_name", "Bradtke"], ["email", "emmanuel_jacobson@waelchi.net"], ["phone_number", "+380 659-184-7015"], ["created_at", "2023-03-29 19:55:44.352637"], ["updated_at", "2023-03-29 19:55:44.352637"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.7ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Vinita"], ["last_name", "Jacobi"], ["email", "lindy@smitham.io"], ["phone_number", "+500 (790) 407-7944"], ["created_at", "2023-03-29 19:55:44.459424"], ["updated_at", "2023-03-29 19:55:44.459424"]]
+  [1m[36mTRANSACTION (76.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.6ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Matthew"], ["last_name", "Fisher"], ["email", "korey@wiza.biz"], ["phone_number", "+91 1-863-214-6128"], ["created_at", "2023-03-29 19:55:44.547145"], ["updated_at", "2023-03-29 19:55:44.547145"]]
+  [1m[36mTRANSACTION (78.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.6ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Junior"], ["last_name", "Beer"], ["email", "genevieve_hansen@fritsch.biz"], ["phone_number", "+253 (302) 967-3025"], ["created_at", "2023-03-29 19:55:44.636682"], ["updated_at", "2023-03-29 19:55:44.636682"]]
+  [1m[36mTRANSACTION (77.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.7ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Marietta"], ["last_name", "Pouros"], ["email", "pamelia@balistreri-hagenes.biz"], ["phone_number", "+966 993-981-6383"], ["created_at", "2023-03-29 19:55:44.725385"], ["updated_at", "2023-03-29 19:55:44.725385"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.7ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mathew"], ["last_name", "Schuppe"], ["email", "darlene.toy@zemlak.biz"], ["phone_number", "+60 1-607-080-9251"], ["created_at", "2023-03-29 19:55:44.836255"], ["updated_at", "2023-03-29 19:55:44.836255"]]
+  [1m[36mTRANSACTION (120.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.8ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Rico"], ["last_name", "Mertz"], ["email", "damian@collins.co"], ["phone_number", "+54 173.671.2503"], ["created_at", "2023-03-29 19:55:44.969208"], ["updated_at", "2023-03-29 19:55:44.969208"]]
+  [1m[36mTRANSACTION (98.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.7ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Chantell"], ["last_name", "Doyle"], ["email", "jerrod@funk.org"], ["phone_number", "+976 246-591-4340"], ["created_at", "2023-03-29 19:55:45.080354"], ["updated_at", "2023-03-29 19:55:45.080354"]]
+  [1m[36mTRANSACTION (121.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.8ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alexandra"], ["last_name", "Hyatt"], ["email", "rocky_ohara@mosciski.biz"], ["phone_number", "+45 1-250-362-5399"], ["created_at", "2023-03-29 19:55:45.213746"], ["updated_at", "2023-03-29 19:55:45.213746"]]
+  [1m[36mTRANSACTION (98.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Create (0.7ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gavin"], ["last_name", "Jacobson"], ["email", "rene_lockman@kilback.org"], ["phone_number", "+358 950.814.3350"], ["created_at", "2023-03-29 19:55:45.324698"], ["updated_at", "2023-03-29 19:55:45.324698"]]
+  [1m[36mTRANSACTION (98.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science 192"], ["description", "Ad aliquid dolores. Molestiae qui similique. In repellendus voluptatem."], ["year", 2049], ["term", 3], ["created_at", "2023-03-29 19:55:45.493714"], ["updated_at", "2023-03-29 19:55:45.493714"]]
+  [1m[36mTRANSACTION (77.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Design 255"], ["description", "Optio cum asperiores. Vel voluptatum illum. Officia nulla consequatur."], ["year", 2047], ["term", 2], ["created_at", "2023-03-29 19:55:45.579951"], ["updated_at", "2023-03-29 19:55:45.579951"]]
+  [1m[36mTRANSACTION (75.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Science 361"], ["description", "Et nemo quasi. Quod qui voluptas. Qui in placeat."], ["year", 2042], ["term", 3], ["created_at", "2023-03-29 19:55:45.668406"], ["updated_at", "2023-03-29 19:55:45.668406"]]
+  [1m[36mTRANSACTION (87.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Education 487"], ["description", "Corporis fugit praesentium. Laborum ea ullam. Consequatur sunt adipisci."], ["year", 2026], ["term", 2], ["created_at", "2023-03-29 19:55:45.768615"], ["updated_at", "2023-03-29 19:55:45.768615"]]
+  [1m[36mTRANSACTION (75.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Information Systems 217"], ["description", "Vel sapiente magnam. Id est molestiae. Maiores dolor in."], ["year", 2049], ["term", 4], ["created_at", "2023-03-29 19:55:45.853331"], ["updated_at", "2023-03-29 19:55:45.853331"]]
+  [1m[36mTRANSACTION (73.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Teaching 496"], ["description", "Est quia aliquid. Qui eos labore. Facilis a ut."], ["year", 2048], ["term", 2], ["created_at", "2023-03-29 19:55:45.934602"], ["updated_at", "2023-03-29 19:55:45.934602"]]
+  [1m[36mTRANSACTION (81.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.7ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science 462"], ["description", "Eveniet non quaerat. Maiores explicabo sapiente. Et qui qui."], ["year", 2029], ["term", 2], ["created_at", "2023-03-29 19:55:46.023788"], ["updated_at", "2023-03-29 19:55:46.023788"]]
+  [1m[36mTRANSACTION (76.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Business 362"], ["description", "Suscipit placeat aut. Dolores non repellendus. Nisi fugiat architecto."], ["year", 2029], ["term", 3], ["created_at", "2023-03-29 19:55:46.111897"], ["updated_at", "2023-03-29 19:55:46.111897"]]
+  [1m[36mTRANSACTION (135.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (0.7ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Law 387"], ["description", "Qui numquam cum. Rem aut totam. Maiores iste ut."], ["year", 2021], ["term", 3], ["created_at", "2023-03-29 19:55:46.259957"], ["updated_at", "2023-03-29 19:55:46.259957"]]
+  [1m[36mTRANSACTION (106.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCourse Create (1.0ms)[0m  [1m[32mINSERT INTO "courses" ("name", "description", "year", "term", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Architectural Technology 251"], ["description", "Nihil autem fugiat. Ut repudiandae et. Dolores placeat mollitia."], ["year", 2041], ["term", 3], ["created_at", "2023-03-29 19:55:46.378539"], ["updated_at", "2023-03-29 19:55:46.378539"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.2ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Information Systems"], ["year", 2049], ["teacher_id", 1], ["course_id", 3], ["capacity", 29], ["remaining_capacity", 23], ["created_at", "2023-03-29 19:55:46.559936"], ["updated_at", "2023-03-29 19:55:46.559936"]]
+  [1m[36mTRANSACTION (90.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2031], ["teacher_id", 3], ["course_id", 8], ["capacity", 25], ["remaining_capacity", 17], ["created_at", "2023-03-29 19:55:46.665359"], ["updated_at", "2023-03-29 19:55:46.665359"]]
+  [1m[36mTRANSACTION (91.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science"], ["year", 2038], ["teacher_id", 6], ["course_id", 2], ["capacity", 23], ["remaining_capacity", 12], ["created_at", "2023-03-29 19:55:46.776247"], ["updated_at", "2023-03-29 19:55:46.776247"]]
+  [1m[36mTRANSACTION (92.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Information Systems"], ["year", 2042], ["teacher_id", 6], ["course_id", 3], ["capacity", 26], ["remaining_capacity", 19], ["created_at", "2023-03-29 19:55:46.887614"], ["updated_at", "2023-03-29 19:55:46.887614"]]
+  [1m[36mTRANSACTION (80.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Arts"], ["year", 2041], ["teacher_id", 6], ["course_id", 7], ["capacity", 23], ["remaining_capacity", 15], ["created_at", "2023-03-29 19:55:46.987208"], ["updated_at", "2023-03-29 19:55:46.987208"]]
+  [1m[36mTRANSACTION (80.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Law"], ["year", 2046], ["teacher_id", 2], ["course_id", 8], ["capacity", 29], ["remaining_capacity", 13], ["created_at", "2023-03-29 19:55:47.087223"], ["updated_at", "2023-03-29 19:55:47.087223"]]
+  [1m[36mTRANSACTION (80.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Information Systems"], ["year", 2044], ["teacher_id", 8], ["course_id", 9], ["capacity", 28], ["remaining_capacity", 10], ["created_at", "2023-03-29 19:55:47.186995"], ["updated_at", "2023-03-29 19:55:47.186995"]]
+  [1m[36mTRANSACTION (102.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mForm Create (0.3ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2050], ["teacher_id", 6], ["course_id", 2], ["capacity", 20], ["remaining_capacity", 9], ["created_at", "2023-03-29 19:55:47.301204"], ["updated_at", "2023-03-29 19:55:47.301204"]]
+  [1m[36mTRANSACTION (80.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Business"], ["year", 2034], ["teacher_id", 5], ["course_id", 6], ["capacity", 23], ["remaining_capacity", 21], ["created_at", "2023-03-29 19:55:47.398793"], ["updated_at", "2023-03-29 19:55:47.398793"]]
+  [1m[36mTRANSACTION (90.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Creative Arts"], ["year", 2039], ["teacher_id", 10], ["course_id", 10], ["capacity", 30], ["remaining_capacity", 23], ["created_at", "2023-03-29 19:55:47.508860"], ["updated_at", "2023-03-29 19:55:47.508860"]]
+  [1m[36mTRANSACTION (90.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Meggan"], ["last_name", "Wisoky"], ["gender", "Male"], ["date_of_birth", "2003-12-31"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:47.669383"], ["updated_at", "2023-03-29 19:55:47.669383"]]
+  [1m[36mTRANSACTION (94.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Virgil"], ["last_name", "Schultz"], ["gender", "Female"], ["date_of_birth", "2018-04-28"], ["admission_year", 2010], ["created_at", "2023-03-29 19:55:47.773656"], ["updated_at", "2023-03-29 19:55:47.773656"]]
+  [1m[36mTRANSACTION (72.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Rasheeda"], ["last_name", "Welch"], ["gender", "Female"], ["date_of_birth", "2021-02-15"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:47.853607"], ["updated_at", "2023-03-29 19:55:47.853607"]]
+  [1m[36mTRANSACTION (77.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Arnulfo"], ["last_name", "Brakus"], ["gender", "Female"], ["date_of_birth", "2014-07-29"], ["admission_year", 2013], ["created_at", "2023-03-29 19:55:47.942418"], ["updated_at", "2023-03-29 19:55:47.942418"]]
+  [1m[36mTRANSACTION (77.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Rey"], ["last_name", "Huel"], ["gender", "Female"], ["date_of_birth", "2011-09-17"], ["admission_year", 2019], ["created_at", "2023-03-29 19:55:48.031268"], ["updated_at", "2023-03-29 19:55:48.031268"]]
+  [1m[36mTRANSACTION (77.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alfonzo"], ["last_name", "Bahringer"], ["gender", "Male"], ["date_of_birth", "2012-12-09"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:48.119831"], ["updated_at", "2023-03-29 19:55:48.119831"]]
+  [1m[36mTRANSACTION (100.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dirk"], ["last_name", "Stamm"], ["gender", "Male"], ["date_of_birth", "2015-09-27"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:48.231063"], ["updated_at", "2023-03-29 19:55:48.231063"]]
+  [1m[36mTRANSACTION (77.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Roberto"], ["last_name", "Franecki"], ["gender", "Male"], ["date_of_birth", "2010-05-04"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:48.319977"], ["updated_at", "2023-03-29 19:55:48.319977"]]
+  [1m[36mTRANSACTION (77.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gerard"], ["last_name", "Ankunding"], ["gender", "Female"], ["date_of_birth", "2006-01-29"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:48.408490"], ["updated_at", "2023-03-29 19:55:48.408490"]]
+  [1m[36mTRANSACTION (77.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jeanice"], ["last_name", "Robel"], ["gender", "Female"], ["date_of_birth", "2013-11-08"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:48.497407"], ["updated_at", "2023-03-29 19:55:48.497407"]]
+  [1m[36mTRANSACTION (88.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Marline"], ["last_name", "Daniel"], ["gender", "Female"], ["date_of_birth", "2008-02-04"], ["admission_year", 2020], ["created_at", "2023-03-29 19:55:48.597132"], ["updated_at", "2023-03-29 19:55:48.597132"]]
+  [1m[36mTRANSACTION (77.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Brendan"], ["last_name", "Hilpert"], ["gender", "Female"], ["date_of_birth", "2019-10-08"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:48.686021"], ["updated_at", "2023-03-29 19:55:48.686021"]]
+  [1m[36mTRANSACTION (77.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Merlin"], ["last_name", "Skiles"], ["gender", "Female"], ["date_of_birth", "2014-02-07"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:48.774856"], ["updated_at", "2023-03-29 19:55:48.774856"]]
+  [1m[36mTRANSACTION (77.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Laura"], ["last_name", "Schowalter"], ["gender", "Female"], ["date_of_birth", "2008-03-18"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:48.863178"], ["updated_at", "2023-03-29 19:55:48.863178"]]
+  [1m[36mTRANSACTION (88.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Hilde"], ["last_name", "Robel"], ["gender", "Female"], ["date_of_birth", "2005-01-10"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:48.963338"], ["updated_at", "2023-03-29 19:55:48.963338"]]
+  [1m[36mTRANSACTION (88.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Robbi"], ["last_name", "Kreiger"], ["gender", "Female"], ["date_of_birth", "2008-09-07"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:49.063906"], ["updated_at", "2023-03-29 19:55:49.063906"]]
+  [1m[36mTRANSACTION (87.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Oscar"], ["last_name", "Fritsch"], ["gender", "Male"], ["date_of_birth", "2017-11-30"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:49.162932"], ["updated_at", "2023-03-29 19:55:49.162932"]]
+  [1m[36mTRANSACTION (87.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alaine"], ["last_name", "Windler"], ["gender", "Female"], ["date_of_birth", "2015-09-08"], ["admission_year", 2011], ["created_at", "2023-03-29 19:55:49.262770"], ["updated_at", "2023-03-29 19:55:49.262770"]]
+  [1m[36mTRANSACTION (100.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Daphne"], ["last_name", "Wisoky"], ["gender", "Male"], ["date_of_birth", "2011-08-23"], ["admission_year", 2015], ["created_at", "2023-03-29 19:55:49.374568"], ["updated_at", "2023-03-29 19:55:49.374568"]]
+  [1m[36mTRANSACTION (98.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lakeesha"], ["last_name", "Brakus"], ["gender", "Female"], ["date_of_birth", "2021-04-05"], ["admission_year", 2019], ["created_at", "2023-03-29 19:55:49.485617"], ["updated_at", "2023-03-29 19:55:49.485617"]]
+  [1m[36mTRANSACTION (97.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Truman"], ["last_name", "Stamm"], ["gender", "Male"], ["date_of_birth", "2013-02-10"], ["admission_year", 2015], ["created_at", "2023-03-29 19:55:49.595793"], ["updated_at", "2023-03-29 19:55:49.595793"]]
+  [1m[36mTRANSACTION (99.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Landon"], ["last_name", "Lowe"], ["gender", "Male"], ["date_of_birth", "2011-05-01"], ["admission_year", 2015], ["created_at", "2023-03-29 19:55:49.707417"], ["updated_at", "2023-03-29 19:55:49.707417"]]
+  [1m[36mTRANSACTION (98.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Otis"], ["last_name", "Prosacco"], ["gender", "Male"], ["date_of_birth", "2010-02-15"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:49.818089"], ["updated_at", "2023-03-29 19:55:49.818089"]]
+  [1m[36mTRANSACTION (70.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Max"], ["last_name", "Skiles"], ["gender", "Female"], ["date_of_birth", "2005-11-09"], ["admission_year", 2020], ["created_at", "2023-03-29 19:55:49.895303"], ["updated_at", "2023-03-29 19:55:49.895303"]]
+  [1m[36mTRANSACTION (99.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Fredric"], ["last_name", "Hoeger"], ["gender", "Female"], ["date_of_birth", "2015-08-12"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:50.007060"], ["updated_at", "2023-03-29 19:55:50.007060"]]
+  [1m[36mTRANSACTION (86.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kaci"], ["last_name", "Hayes"], ["gender", "Male"], ["date_of_birth", "2015-09-30"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:50.107019"], ["updated_at", "2023-03-29 19:55:50.107019"]]
+  [1m[36mTRANSACTION (109.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gus"], ["last_name", "Beier"], ["gender", "Female"], ["date_of_birth", "2007-03-09"], ["admission_year", 2019], ["created_at", "2023-03-29 19:55:50.228489"], ["updated_at", "2023-03-29 19:55:50.228489"]]
+  [1m[36mTRANSACTION (88.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Moses"], ["last_name", "Keebler"], ["gender", "Female"], ["date_of_birth", "2022-07-08"], ["admission_year", 2017], ["created_at", "2023-03-29 19:55:50.328929"], ["updated_at", "2023-03-29 19:55:50.328929"]]
+  [1m[36mTRANSACTION (87.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Hector"], ["last_name", "Auer"], ["gender", "Female"], ["date_of_birth", "2006-11-03"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:50.428744"], ["updated_at", "2023-03-29 19:55:50.428744"]]
+  [1m[36mTRANSACTION (97.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.9ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Shawnta"], ["last_name", "Oberbrunner"], ["gender", "Female"], ["date_of_birth", "2003-12-15"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:50.538873"], ["updated_at", "2023-03-29 19:55:50.538873"]]
+  [1m[36mTRANSACTION (134.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lavern"], ["last_name", "Block"], ["gender", "Female"], ["date_of_birth", "2017-01-23"], ["admission_year", 2015], ["created_at", "2023-03-29 19:55:50.686569"], ["updated_at", "2023-03-29 19:55:50.686569"]]
+  [1m[36mTRANSACTION (105.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Babette"], ["last_name", "Buckridge"], ["gender", "Female"], ["date_of_birth", "2021-09-21"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:50.804459"], ["updated_at", "2023-03-29 19:55:50.804459"]]
+  [1m[36mTRANSACTION (132.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lacresha"], ["last_name", "Schuster"], ["gender", "Female"], ["date_of_birth", "2009-10-19"], ["admission_year", 2019], ["created_at", "2023-03-29 19:55:50.949402"], ["updated_at", "2023-03-29 19:55:50.949402"]]
+  [1m[36mTRANSACTION (76.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Denna"], ["last_name", "Johns"], ["gender", "Male"], ["date_of_birth", "2005-08-18"], ["admission_year", 2017], ["created_at", "2023-03-29 19:55:51.037927"], ["updated_at", "2023-03-29 19:55:51.037927"]]
+  [1m[36mTRANSACTION (77.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ezequiel"], ["last_name", "Daniel"], ["gender", "Female"], ["date_of_birth", "2005-03-20"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:51.126537"], ["updated_at", "2023-03-29 19:55:51.126537"]]
+  [1m[36mTRANSACTION (77.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ginger"], ["last_name", "Nader"], ["gender", "Male"], ["date_of_birth", "2014-05-03"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:51.215003"], ["updated_at", "2023-03-29 19:55:51.215003"]]
+  [1m[36mTRANSACTION (77.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sonny"], ["last_name", "McCullough"], ["gender", "Male"], ["date_of_birth", "2022-02-22"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:51.304638"], ["updated_at", "2023-03-29 19:55:51.304638"]]
+  [1m[36mTRANSACTION (76.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Eddie"], ["last_name", "Ledner"], ["gender", "Female"], ["date_of_birth", "2022-01-14"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:51.393571"], ["updated_at", "2023-03-29 19:55:51.393571"]]
+  [1m[36mTRANSACTION (75.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Yasuko"], ["last_name", "Stoltenberg"], ["gender", "Male"], ["date_of_birth", "2019-04-10"], ["admission_year", 2015], ["created_at", "2023-03-29 19:55:51.481848"], ["updated_at", "2023-03-29 19:55:51.481848"]]
+  [1m[36mTRANSACTION (88.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Terrell"], ["last_name", "Baumbach"], ["gender", "Female"], ["date_of_birth", "2014-04-21"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:51.581735"], ["updated_at", "2023-03-29 19:55:51.581735"]]
+  [1m[36mTRANSACTION (88.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jacob"], ["last_name", "Sawayn"], ["gender", "Male"], ["date_of_birth", "2012-07-30"], ["admission_year", 2019], ["created_at", "2023-03-29 19:55:51.682453"], ["updated_at", "2023-03-29 19:55:51.682453"]]
+  [1m[36mTRANSACTION (97.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Neely"], ["last_name", "Bayer"], ["gender", "Male"], ["date_of_birth", "2018-04-02"], ["admission_year", 2012], ["created_at", "2023-03-29 19:55:51.793205"], ["updated_at", "2023-03-29 19:55:51.793205"]]
+  [1m[36mTRANSACTION (97.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Anjanette"], ["last_name", "Hintz"], ["gender", "Female"], ["date_of_birth", "2004-09-07"], ["admission_year", 2015], ["created_at", "2023-03-29 19:55:51.903384"], ["updated_at", "2023-03-29 19:55:51.903384"]]
+  [1m[36mTRANSACTION (88.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ling"], ["last_name", "Sauer"], ["gender", "Female"], ["date_of_birth", "2022-07-21"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:52.004036"], ["updated_at", "2023-03-29 19:55:52.004036"]]
+  [1m[36mTRANSACTION (109.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alberta"], ["last_name", "Bode"], ["gender", "Female"], ["date_of_birth", "2020-04-14"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:52.125851"], ["updated_at", "2023-03-29 19:55:52.125851"]]
+  [1m[36mTRANSACTION (109.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dara"], ["last_name", "Daugherty"], ["gender", "Male"], ["date_of_birth", "2005-06-20"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:52.247364"], ["updated_at", "2023-03-29 19:55:52.247364"]]
+  [1m[36mTRANSACTION (99.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gertrudis"], ["last_name", "Zieme"], ["gender", "Male"], ["date_of_birth", "2005-04-03"], ["admission_year", 2018], ["created_at", "2023-03-29 19:55:52.358389"], ["updated_at", "2023-03-29 19:55:52.358389"]]
+  [1m[36mTRANSACTION (88.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tyler"], ["last_name", "Kilback"], ["gender", "Female"], ["date_of_birth", "2004-02-26"], ["admission_year", 2016], ["created_at", "2023-03-29 19:55:52.458042"], ["updated_at", "2023-03-29 19:55:52.458042"]]
+  [1m[36mTRANSACTION (99.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gustavo"], ["last_name", "Roob"], ["gender", "Male"], ["date_of_birth", "2007-09-15"], ["admission_year", 2019], ["created_at", "2023-03-29 19:55:52.568947"], ["updated_at", "2023-03-29 19:55:52.568947"]]
+  [1m[36mTRANSACTION (99.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Silvana"], ["last_name", "Ebert"], ["gender", "Male"], ["date_of_birth", "2010-11-01"], ["admission_year", 2014], ["created_at", "2023-03-29 19:55:52.680509"], ["updated_at", "2023-03-29 19:55:52.680509"]]
+  [1m[36mTRANSACTION (153.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Biological Science"], ["year", 2046], ["teacher_id", 3], ["course_id", 8], ["capacity", 21], ["remaining_capacity", 10], ["created_at", "2023-03-29 19:55:52.867112"], ["updated_at", "2023-03-29 19:55:52.867112"]]
+  [1m[36mTRANSACTION (103.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2023-03-22"], ["admission_number", "4925"], ["student_id", 10], ["form_id", 81], ["form", nil], ["created_at", "2023-03-29 19:55:53.024930"], ["updated_at", "2023-03-29 19:55:53.024930"]]
+  [1m[36mTRANSACTION (137.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2030], ["teacher_id", 2], ["course_id", 9], ["capacity", 28], ["remaining_capacity", 17], ["created_at", "2023-03-29 19:55:53.182968"], ["updated_at", "2023-03-29 19:55:53.182968"]]
+  [1m[36mTRANSACTION (98.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.3ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-01-31"], ["admission_number", "4861"], ["student_id", 23], ["form_id", 82], ["form", nil], ["created_at", "2023-03-29 19:55:53.290531"], ["updated_at", "2023-03-29 19:55:53.290531"]]
+  [1m[36mTRANSACTION (104.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Communications"], ["year", 2030], ["teacher_id", 4], ["course_id", 4], ["capacity", 29], ["remaining_capacity", 24], ["created_at", "2023-03-29 19:55:53.413340"], ["updated_at", "2023-03-29 19:55:53.413340"]]
+  [1m[36mTRANSACTION (90.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-07-17"], ["admission_number", "3437"], ["student_id", 1], ["form_id", 83], ["form", nil], ["created_at", "2023-03-29 19:55:53.520180"], ["updated_at", "2023-03-29 19:55:53.520180"]]
+  [1m[36mTRANSACTION (105.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Medicine"], ["year", 2027], ["teacher_id", 10], ["course_id", 9], ["capacity", 30], ["remaining_capacity", 22], ["created_at", "2023-03-29 19:55:53.646848"], ["updated_at", "2023-03-29 19:55:53.646848"]]
+  [1m[36mTRANSACTION (90.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-10-11"], ["admission_number", "2491"], ["student_id", 35], ["form_id", 84], ["form", nil], ["created_at", "2023-03-29 19:55:53.752672"], ["updated_at", "2023-03-29 19:55:53.752672"]]
+  [1m[36mTRANSACTION (94.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Architectural Technology"], ["year", 2036], ["teacher_id", 2], ["course_id", 3], ["capacity", 21], ["remaining_capacity", 19], ["created_at", "2023-03-29 19:55:53.868142"], ["updated_at", "2023-03-29 19:55:53.868142"]]
+  [1m[36mTRANSACTION (101.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.7ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-08-03"], ["admission_number", "3143"], ["student_id", 36], ["form_id", 85], ["form", nil], ["created_at", "2023-03-29 19:55:53.985958"], ["updated_at", "2023-03-29 19:55:53.985958"]]
+  [1m[36mTRANSACTION (94.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.4ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Design"], ["year", 2023], ["teacher_id", 4], ["course_id", 10], ["capacity", 20], ["remaining_capacity", 16], ["created_at", "2023-03-29 19:55:54.099775"], ["updated_at", "2023-03-29 19:55:54.099775"]]
+  [1m[36mTRANSACTION (114.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-08-17"], ["admission_number", "1422"], ["student_id", 12], ["form_id", 86], ["form", nil], ["created_at", "2023-03-29 19:55:54.230105"], ["updated_at", "2023-03-29 19:55:54.230105"]]
+  [1m[36mTRANSACTION (94.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Creative Arts"], ["year", 2031], ["teacher_id", 10], ["course_id", 10], ["capacity", 20], ["remaining_capacity", 18], ["created_at", "2023-03-29 19:55:54.343993"], ["updated_at", "2023-03-29 19:55:54.343993"]]
+  [1m[36mTRANSACTION (92.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-05-22"], ["admission_number", "5571"], ["student_id", 16], ["form_id", 87], ["form", nil], ["created_at", "2023-03-29 19:55:54.451999"], ["updated_at", "2023-03-29 19:55:54.451999"]]
+  [1m[36mTRANSACTION (83.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science"], ["year", 2023], ["teacher_id", 4], ["course_id", 1], ["capacity", 30], ["remaining_capacity", 24], ["created_at", "2023-03-29 19:55:54.554532"], ["updated_at", "2023-03-29 19:55:54.554532"]]
+  [1m[36mTRANSACTION (70.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-01-14"], ["admission_number", "1794"], ["student_id", 18], ["form_id", 88], ["form", nil], ["created_at", "2023-03-29 19:55:54.641089"], ["updated_at", "2023-03-29 19:55:54.641089"]]
+  [1m[36mTRANSACTION (83.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science"], ["year", 2034], ["teacher_id", 1], ["course_id", 2], ["capacity", 20], ["remaining_capacity", 15], ["created_at", "2023-03-29 19:55:54.744573"], ["updated_at", "2023-03-29 19:55:54.744573"]]
+  [1m[36mTRANSACTION (79.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-11-29"], ["admission_number", "3518"], ["student_id", 16], ["form_id", 89], ["form", nil], ["created_at", "2023-03-29 19:55:54.840847"], ["updated_at", "2023-03-29 19:55:54.840847"]]
+  [1m[36mTRANSACTION (104.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Medicine"], ["year", 2034], ["teacher_id", 10], ["course_id", 3], ["capacity", 29], ["remaining_capacity", 9], ["created_at", "2023-03-29 19:55:54.966891"], ["updated_at", "2023-03-29 19:55:54.966891"]]
+  [1m[36mTRANSACTION (79.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-08-12"], ["admission_number", "1931"], ["student_id", 35], ["form_id", 90], ["form", nil], ["created_at", "2023-03-29 19:55:55.061191"], ["updated_at", "2023-03-29 19:55:55.061191"]]
+  [1m[36mTRANSACTION (84.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Teaching"], ["year", 2021], ["teacher_id", 9], ["course_id", 1], ["capacity", 22], ["remaining_capacity", 8], ["created_at", "2023-03-29 19:55:55.165281"], ["updated_at", "2023-03-29 19:55:55.165281"]]
+  [1m[36mTRANSACTION (68.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.7ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-03-10"], ["admission_number", "2123"], ["student_id", 7], ["form_id", 91], ["form", nil], ["created_at", "2023-03-29 19:55:55.249691"], ["updated_at", "2023-03-29 19:55:55.249691"]]
+  [1m[36mTRANSACTION (84.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Teaching"], ["year", 2029], ["teacher_id", 9], ["course_id", 8], ["capacity", 22], ["remaining_capacity", 7], ["created_at", "2023-03-29 19:55:55.354102"], ["updated_at", "2023-03-29 19:55:55.354102"]]
+  [1m[36mTRANSACTION (69.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-11-07"], ["admission_number", "1420"], ["student_id", 49], ["form_id", 92], ["form", nil], ["created_at", "2023-03-29 19:55:55.439599"], ["updated_at", "2023-03-29 19:55:55.439599"]]
+  [1m[36mTRANSACTION (82.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mForm Create (0.2ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2038], ["teacher_id", 4], ["course_id", 5], ["capacity", 20], ["remaining_capacity", 17], ["created_at", "2023-03-29 19:55:55.532143"], ["updated_at", "2023-03-29 19:55:55.532143"]]
+  [1m[36mTRANSACTION (72.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-07-02"], ["admission_number", "2476"], ["student_id", 41], ["form_id", 93], ["form", nil], ["created_at", "2023-03-29 19:55:55.615666"], ["updated_at", "2023-03-29 19:55:55.615666"]]
+  [1m[36mTRANSACTION (84.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Law"], ["year", 2022], ["teacher_id", 8], ["course_id", 8], ["capacity", 24], ["remaining_capacity", 17], ["created_at", "2023-03-29 19:55:55.719734"], ["updated_at", "2023-03-29 19:55:55.719734"]]
+  [1m[36mTRANSACTION (70.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-09-08"], ["admission_number", "2708"], ["student_id", 30], ["form_id", 94], ["form", nil], ["created_at", "2023-03-29 19:55:55.805671"], ["updated_at", "2023-03-29 19:55:55.805671"]]
+  [1m[36mTRANSACTION (83.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Information Systems"], ["year", 2047], ["teacher_id", 5], ["course_id", 1], ["capacity", 29], ["remaining_capacity", 22], ["created_at", "2023-03-29 19:55:55.910299"], ["updated_at", "2023-03-29 19:55:55.910299"]]
+  [1m[36mTRANSACTION (79.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-09-21"], ["admission_number", "2847"], ["student_id", 39], ["form_id", 95], ["form", nil], ["created_at", "2023-03-29 19:55:56.005838"], ["updated_at", "2023-03-29 19:55:56.005838"]]
+  [1m[36mTRANSACTION (93.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Health Science"], ["year", 2022], ["teacher_id", 2], ["course_id", 3], ["capacity", 25], ["remaining_capacity", 22], ["created_at", "2023-03-29 19:55:56.120403"], ["updated_at", "2023-03-29 19:55:56.120403"]]
+  [1m[36mTRANSACTION (101.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.3ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-08-09"], ["admission_number", "5106"], ["student_id", 29], ["form_id", 96], ["form", nil], ["created_at", "2023-03-29 19:55:56.233791"], ["updated_at", "2023-03-29 19:55:56.233791"]]
+  [1m[36mTRANSACTION (135.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2047], ["teacher_id", 3], ["course_id", 8], ["capacity", 22], ["remaining_capacity", 22], ["created_at", "2023-03-29 19:55:56.385822"], ["updated_at", "2023-03-29 19:55:56.385822"]]
+  [1m[36mTRANSACTION (142.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-03-29"], ["admission_number", "3859"], ["student_id", 7], ["form_id", 97], ["form", nil], ["created_at", "2023-03-29 19:55:56.545187"], ["updated_at", "2023-03-29 19:55:56.545187"]]
+  [1m[36mTRANSACTION (151.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mForm Create (0.3ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Commerce"], ["year", 2046], ["teacher_id", 1], ["course_id", 5], ["capacity", 25], ["remaining_capacity", 6], ["created_at", "2023-03-29 19:55:56.709199"], ["updated_at", "2023-03-29 19:55:56.709199"]]
+  [1m[36mTRANSACTION (204.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mAdmission Create (1.0ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-09-20"], ["admission_number", "3926"], ["student_id", 7], ["form_id", 98], ["form", nil], ["created_at", "2023-03-29 19:55:56.927187"], ["updated_at", "2023-03-29 19:55:56.927187"]]
+  [1m[36mTRANSACTION (92.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2047], ["teacher_id", 9], ["course_id", 10], ["capacity", 22], ["remaining_capacity", 18], ["created_at", "2023-03-29 19:55:57.041606"], ["updated_at", "2023-03-29 19:55:57.041606"]]
+  [1m[36mTRANSACTION (101.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.3ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2023-02-01"], ["admission_number", "4441"], ["student_id", 27], ["form_id", 99], ["form", nil], ["created_at", "2023-03-29 19:55:57.155344"], ["updated_at", "2023-03-29 19:55:57.155344"]]
+  [1m[36mTRANSACTION (79.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Applied Science (Psychology)"], ["year", 2024], ["teacher_id", 9], ["course_id", 6], ["capacity", 20], ["remaining_capacity", 21], ["created_at", "2023-03-29 19:55:57.253213"], ["updated_at", "2023-03-29 19:55:57.253213"]]
+  [1m[36mTRANSACTION (89.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-07-01"], ["admission_number", "3171"], ["student_id", 46], ["form_id", 100], ["form", nil], ["created_at", "2023-03-29 19:55:57.359128"], ["updated_at", "2023-03-29 19:55:57.359128"]]
+  [1m[36mTRANSACTION (82.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Engineering"], ["year", 2050], ["teacher_id", 8], ["course_id", 1], ["capacity", 21], ["remaining_capacity", 21], ["created_at", "2023-03-29 19:55:57.463189"], ["updated_at", "2023-03-29 19:55:57.463189"]]
+  [1m[36mTRANSACTION (90.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-09-08"], ["admission_number", "2686"], ["student_id", 50], ["form_id", 101], ["form", nil], ["created_at", "2023-03-29 19:55:57.571004"], ["updated_at", "2023-03-29 19:55:57.571004"]]
+  [1m[36mTRANSACTION (81.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Biomedical Science"], ["year", 2041], ["teacher_id", 5], ["course_id", 6], ["capacity", 23], ["remaining_capacity", 24], ["created_at", "2023-03-29 19:55:57.672689"], ["updated_at", "2023-03-29 19:55:57.672689"]]
+  [1m[36mTRANSACTION (80.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-01-26"], ["admission_number", "5746"], ["student_id", 21], ["form_id", 102], ["form", nil], ["created_at", "2023-03-29 19:55:57.768403"], ["updated_at", "2023-03-29 19:55:57.768403"]]
+  [1m[36mTRANSACTION (84.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Information Systems"], ["year", 2044], ["teacher_id", 8], ["course_id", 9], ["capacity", 21], ["remaining_capacity", 19], ["created_at", "2023-03-29 19:55:57.874026"], ["updated_at", "2023-03-29 19:55:57.874026"]]
+  [1m[36mTRANSACTION (78.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-09-14"], ["admission_number", "1208"], ["student_id", 50], ["form_id", 103], ["form", nil], ["created_at", "2023-03-29 19:55:57.969493"], ["updated_at", "2023-03-29 19:55:57.969493"]]
+  [1m[36mTRANSACTION (94.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Psychology"], ["year", 2036], ["teacher_id", 3], ["course_id", 6], ["capacity", 25], ["remaining_capacity", 21], ["created_at", "2023-03-29 19:55:58.085601"], ["updated_at", "2023-03-29 19:55:58.085601"]]
+  [1m[36mTRANSACTION (77.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.4ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-10-09"], ["admission_number", "3420"], ["student_id", 17], ["form_id", 104], ["form", nil], ["created_at", "2023-03-29 19:55:58.203144"], ["updated_at", "2023-03-29 19:55:58.203144"]]
+  [1m[36mTRANSACTION (95.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Education"], ["year", 2022], ["teacher_id", 2], ["course_id", 7], ["capacity", 28], ["remaining_capacity", 23], ["created_at", "2023-03-29 19:55:58.319312"], ["updated_at", "2023-03-29 19:55:58.319312"]]
+  [1m[36mTRANSACTION (76.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-06-24"], ["admission_number", "1398"], ["student_id", 22], ["form_id", 105], ["form", nil], ["created_at", "2023-03-29 19:55:58.413628"], ["updated_at", "2023-03-29 19:55:58.413628"]]
+  [1m[36mTRANSACTION (82.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.4ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2023], ["teacher_id", 1], ["course_id", 9], ["capacity", 22], ["remaining_capacity", 23], ["created_at", "2023-03-29 19:55:58.518367"], ["updated_at", "2023-03-29 19:55:58.518367"]]
+  [1m[36mTRANSACTION (88.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-01-19"], ["admission_number", "4759"], ["student_id", 35], ["form_id", 106], ["form", nil], ["created_at", "2023-03-29 19:55:58.624139"], ["updated_at", "2023-03-29 19:55:58.624139"]]
+  [1m[36mTRANSACTION (83.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Science"], ["year", 2035], ["teacher_id", 4], ["course_id", 8], ["capacity", 21], ["remaining_capacity", 24], ["created_at", "2023-03-29 19:55:58.729388"], ["updated_at", "2023-03-29 19:55:58.729388"]]
+  [1m[36mTRANSACTION (88.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-12-02"], ["admission_number", "2014"], ["student_id", 15], ["form_id", 107], ["form", nil], ["created_at", "2023-03-29 19:55:58.835103"], ["updated_at", "2023-03-29 19:55:58.835103"]]
+  [1m[36mTRANSACTION (115.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Teaching"], ["year", 2033], ["teacher_id", 2], ["course_id", 8], ["capacity", 29], ["remaining_capacity", 15], ["created_at", "2023-03-29 19:55:58.975441"], ["updated_at", "2023-03-29 19:55:58.975441"]]
+  [1m[36mTRANSACTION (97.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2023-03-18"], ["admission_number", "3033"], ["student_id", 27], ["form_id", 108], ["form", nil], ["created_at", "2023-03-29 19:55:59.088636"], ["updated_at", "2023-03-29 19:55:59.088636"]]
+  [1m[36mTRANSACTION (95.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Biomedical Science"], ["year", 2031], ["teacher_id", 9], ["course_id", 3], ["capacity", 21], ["remaining_capacity", 14], ["created_at", "2023-03-29 19:55:59.205836"], ["updated_at", "2023-03-29 19:55:59.205836"]]
+  [1m[36mTRANSACTION (78.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-09-07"], ["admission_number", "5990"], ["student_id", 8], ["form_id", 109], ["form", nil], ["created_at", "2023-03-29 19:55:59.300987"], ["updated_at", "2023-03-29 19:55:59.300987"]]
+  [1m[36mTRANSACTION (82.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Communications"], ["year", 2041], ["teacher_id", 3], ["course_id", 10], ["capacity", 21], ["remaining_capacity", 22], ["created_at", "2023-03-29 19:55:59.405907"], ["updated_at", "2023-03-29 19:55:59.405907"]]
+  [1m[36mTRANSACTION (89.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-02-06"], ["admission_number", "2081"], ["student_id", 24], ["form_id", 110], ["form", nil], ["created_at", "2023-03-29 19:55:59.511985"], ["updated_at", "2023-03-29 19:55:59.511985"]]
+  [1m[36mTRANSACTION (93.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Engineering"], ["year", 2024], ["teacher_id", 2], ["course_id", 1], ["capacity", 21], ["remaining_capacity", 8], ["created_at", "2023-03-29 19:55:59.627936"], ["updated_at", "2023-03-29 19:55:59.627936"]]
+  [1m[36mTRANSACTION (100.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-02-25"], ["admission_number", "5303"], ["student_id", 12], ["form_id", 111], ["form", nil], ["created_at", "2023-03-29 19:55:59.745817"], ["updated_at", "2023-03-29 19:55:59.745817"]]
+  [1m[36mTRANSACTION (103.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Education"], ["year", 2028], ["teacher_id", 2], ["course_id", 9], ["capacity", 25], ["remaining_capacity", 7], ["created_at", "2023-03-29 19:55:59.872107"], ["updated_at", "2023-03-29 19:55:59.872107"]]
+  [1m[36mTRANSACTION (88.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-06-16"], ["admission_number", "4652"], ["student_id", 49], ["form_id", 112], ["form", nil], ["created_at", "2023-03-29 19:55:59.977792"], ["updated_at", "2023-03-29 19:55:59.977792"]]
+  [1m[36mTRANSACTION (94.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.3ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Commerce"], ["year", 2028], ["teacher_id", 10], ["course_id", 10], ["capacity", 24], ["remaining_capacity", 22], ["created_at", "2023-03-29 19:56:00.085637"], ["updated_at", "2023-03-29 19:56:00.085637"]]
+  [1m[36mTRANSACTION (100.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAdmission Create (1.0ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-09-02"], ["admission_number", "3939"], ["student_id", 3], ["form_id", 113], ["form", nil], ["created_at", "2023-03-29 19:56:00.200436"], ["updated_at", "2023-03-29 19:56:00.200436"]]
+  [1m[36mTRANSACTION (114.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.4ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mForm Create (1.1ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Biomedical Science"], ["year", 2042], ["teacher_id", 6], ["course_id", 7], ["capacity", 29], ["remaining_capacity", 5], ["created_at", "2023-03-29 19:56:00.339205"], ["updated_at", "2023-03-29 19:56:00.339205"]]
+  [1m[36mTRANSACTION (97.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mAdmission Create (1.0ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-09-01"], ["admission_number", "1375"], ["student_id", 22], ["form_id", 114], ["form", nil], ["created_at", "2023-03-29 19:56:00.455492"], ["updated_at", "2023-03-29 19:56:00.455492"]]
+  [1m[36mTRANSACTION (115.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Education"], ["year", 2033], ["teacher_id", 9], ["course_id", 7], ["capacity", 23], ["remaining_capacity", 25], ["created_at", "2023-03-29 19:56:00.592241"], ["updated_at", "2023-03-29 19:56:00.592241"]]
+  [1m[36mTRANSACTION (101.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-06-30"], ["admission_number", "2496"], ["student_id", 1], ["form_id", 115], ["form", nil], ["created_at", "2023-03-29 19:56:00.709458"], ["updated_at", "2023-03-29 19:56:00.709458"]]
+  [1m[36mTRANSACTION (116.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Medicine"], ["year", 2049], ["teacher_id", 10], ["course_id", 5], ["capacity", 22], ["remaining_capacity", 19], ["created_at", "2023-03-29 19:56:00.847289"], ["updated_at", "2023-03-29 19:56:00.847289"]]
+  [1m[36mTRANSACTION (112.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mAdmission Create (1.0ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-08-01"], ["admission_number", "1819"], ["student_id", 13], ["form_id", 116], ["form", nil], ["created_at", "2023-03-29 19:56:00.977247"], ["updated_at", "2023-03-29 19:56:00.977247"]]
+  [1m[36mTRANSACTION (103.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Architectural Technology"], ["year", 2030], ["teacher_id", 5], ["course_id", 10], ["capacity", 29], ["remaining_capacity", 20], ["created_at", "2023-03-29 19:56:01.102086"], ["updated_at", "2023-03-29 19:56:01.102086"]]
+  [1m[36mTRANSACTION (101.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-10-10"], ["admission_number", "2622"], ["student_id", 24], ["form_id", 117], ["form", nil], ["created_at", "2023-03-29 19:56:01.220785"], ["updated_at", "2023-03-29 19:56:01.220785"]]
+  [1m[36mTRANSACTION (115.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2047], ["teacher_id", 6], ["course_id", 3], ["capacity", 25], ["remaining_capacity", 7], ["created_at", "2023-03-29 19:56:01.357172"], ["updated_at", "2023-03-29 19:56:01.357172"]]
+  [1m[36mTRANSACTION (101.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.7ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-06-26"], ["admission_number", "5549"], ["student_id", 31], ["form_id", 118], ["form", nil], ["created_at", "2023-03-29 19:56:01.475263"], ["updated_at", "2023-03-29 19:56:01.475263"]]
+  [1m[36mTRANSACTION (105.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Psychology"], ["year", 2033], ["teacher_id", 4], ["course_id", 2], ["capacity", 26], ["remaining_capacity", 16], ["created_at", "2023-03-29 19:56:01.602401"], ["updated_at", "2023-03-29 19:56:01.602401"]]
+  [1m[36mTRANSACTION (101.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-05-18"], ["admission_number", "1199"], ["student_id", 30], ["form_id", 119], ["form", nil], ["created_at", "2023-03-29 19:56:01.719576"], ["updated_at", "2023-03-29 19:56:01.719576"]]
+  [1m[36mTRANSACTION (93.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Health Science"], ["year", 2050], ["teacher_id", 9], ["course_id", 6], ["capacity", 22], ["remaining_capacity", 9], ["created_at", "2023-03-29 19:56:01.834979"], ["updated_at", "2023-03-29 19:56:01.834979"]]
+  [1m[36mTRANSACTION (90.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-09-20"], ["admission_number", "4516"], ["student_id", 20], ["form_id", 120], ["form", nil], ["created_at", "2023-03-29 19:56:01.941941"], ["updated_at", "2023-03-29 19:56:01.941941"]]
+  [1m[36mTRANSACTION (93.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.4ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Criminology"], ["year", 2024], ["teacher_id", 8], ["course_id", 5], ["capacity", 26], ["remaining_capacity", 21], ["created_at", "2023-03-29 19:56:02.058389"], ["updated_at", "2023-03-29 19:56:02.058389"]]
+  [1m[36mTRANSACTION (99.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-02-07"], ["admission_number", "2165"], ["student_id", 48], ["form_id", 121], ["form", nil], ["created_at", "2023-03-29 19:56:02.175360"], ["updated_at", "2023-03-29 19:56:02.175360"]]
+  [1m[36mTRANSACTION (93.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (1.3ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Engineering"], ["year", 2023], ["teacher_id", 8], ["course_id", 6], ["capacity", 29], ["remaining_capacity", 15], ["created_at", "2023-03-29 19:56:02.290523"], ["updated_at", "2023-03-29 19:56:02.290523"]]
+  [1m[36mTRANSACTION (100.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-02-17"], ["admission_number", "3895"], ["student_id", 39], ["form_id", 122], ["form", nil], ["created_at", "2023-03-29 19:56:02.407721"], ["updated_at", "2023-03-29 19:56:02.407721"]]
+  [1m[36mTRANSACTION (105.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Health Science"], ["year", 2043], ["teacher_id", 7], ["course_id", 6], ["capacity", 29], ["remaining_capacity", 25], ["created_at", "2023-03-29 19:56:02.535338"], ["updated_at", "2023-03-29 19:56:02.535338"]]
+  [1m[36mTRANSACTION (132.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-02-25"], ["admission_number", "5869"], ["student_id", 1], ["form_id", 123], ["form", nil], ["created_at", "2023-03-29 19:56:02.685078"], ["updated_at", "2023-03-29 19:56:02.685078"]]
+  [1m[36mTRANSACTION (160.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Business"], ["year", 2029], ["teacher_id", 3], ["course_id", 9], ["capacity", 28], ["remaining_capacity", 8], ["created_at", "2023-03-29 19:56:02.865803"], ["updated_at", "2023-03-29 19:56:02.865803"]]
+  [1m[36mTRANSACTION (102.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-10-03"], ["admission_number", "5321"], ["student_id", 39], ["form_id", 124], ["form", nil], ["created_at", "2023-03-29 19:56:02.984895"], ["updated_at", "2023-03-29 19:56:02.984895"]]
+  [1m[36mTRANSACTION (104.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Computer Science"], ["year", 2028], ["teacher_id", 9], ["course_id", 3], ["capacity", 24], ["remaining_capacity", 23], ["created_at", "2023-03-29 19:56:03.109519"], ["updated_at", "2023-03-29 19:56:03.109519"]]
+  [1m[36mTRANSACTION (102.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2023-01-08"], ["admission_number", "3203"], ["student_id", 41], ["form_id", 125], ["form", nil], ["created_at", "2023-03-29 19:56:03.228912"], ["updated_at", "2023-03-29 19:56:03.228912"]]
+  [1m[36mTRANSACTION (160.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mForm Create (0.7ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science"], ["year", 2043], ["teacher_id", 5], ["course_id", 6], ["capacity", 26], ["remaining_capacity", 8], ["created_at", "2023-03-29 19:56:03.409298"], ["updated_at", "2023-03-29 19:56:03.409298"]]
+  [1m[36mTRANSACTION (102.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-01-17"], ["admission_number", "2151"], ["student_id", 14], ["form_id", 126], ["form", nil], ["created_at", "2023-03-29 19:56:03.528677"], ["updated_at", "2023-03-29 19:56:03.528677"]]
+  [1m[36mTRANSACTION (104.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mForm Create (1.0ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Business"], ["year", 2032], ["teacher_id", 1], ["course_id", 8], ["capacity", 25], ["remaining_capacity", 13], ["created_at", "2023-03-29 19:56:03.653395"], ["updated_at", "2023-03-29 19:56:03.653395"]]
+  [1m[36mTRANSACTION (110.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2020-08-30"], ["admission_number", "1390"], ["student_id", 27], ["form_id", 127], ["form", nil], ["created_at", "2023-03-29 19:56:03.780185"], ["updated_at", "2023-03-29 19:56:03.780185"]]
+  [1m[36mTRANSACTION (83.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mForm Create (0.8ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Forensic Science"], ["year", 2036], ["teacher_id", 3], ["course_id", 10], ["capacity", 25], ["remaining_capacity", 9], ["created_at", "2023-03-29 19:56:03.885061"], ["updated_at", "2023-03-29 19:56:03.885061"]]
+  [1m[36mTRANSACTION (92.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.9ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2022-01-14"], ["admission_number", "1658"], ["student_id", 31], ["form_id", 128], ["form", nil], ["created_at", "2023-03-29 19:56:03.994493"], ["updated_at", "2023-03-29 19:56:03.994493"]]
+  [1m[36mTRANSACTION (82.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mForm Create (0.9ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Architectural Technology"], ["year", 2050], ["teacher_id", 7], ["course_id", 7], ["capacity", 29], ["remaining_capacity", 15], ["created_at", "2023-03-29 19:56:04.100742"], ["updated_at", "2023-03-29 19:56:04.100742"]]
+  [1m[36mTRANSACTION (86.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.8ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-08-06"], ["admission_number", "5387"], ["student_id", 18], ["form_id", 129], ["form", nil], ["created_at", "2023-03-29 19:56:04.203159"], ["updated_at", "2023-03-29 19:56:04.203159"]]
+  [1m[36mTRANSACTION (118.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mForm Create (0.3ms)[0m  [1m[32mINSERT INTO "forms" ("name", "year", "teacher_id", "course_id", "capacity", "remaining_capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Engineering"], ["year", 2036], ["teacher_id", 1], ["course_id", 9], ["capacity", 20], ["remaining_capacity", 6], ["created_at", "2023-03-29 19:56:04.334383"], ["updated_at", "2023-03-29 19:56:04.334383"]]
+  [1m[36mTRANSACTION (90.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mAdmission Create (0.7ms)[0m  [1m[32mINSERT INTO "admissions" ("admission_date", "admission_number", "student_id", "form_id", "form", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admission_date", "2021-09-13"], ["admission_number", "2964"], ["student_id", 40], ["form_id", 130], ["form", nil], ["created_at", "2023-03-29 19:56:04.437971"], ["updated_at", "2023-03-29 19:56:04.437971"]]
+  [1m[36mTRANSACTION (83.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-03-29 22:57:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 27.5ms | Allocations: 933)
+Completed 200 OK in 69ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 7902)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-03-29 23:03:08 +0300
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/courses_controller.rb:8:in `index'
+Completed 200 OK in 38ms (Views: 24.0ms | ActiveRecord: 1.5ms | Allocations: 33603)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2023-03-29 23:03:13 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:45:in `set_course'
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:13:in `show'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 2239)
+
+
+Started GET "/classes" for 127.0.0.1 at 2023-03-29 23:03:21 +0300
+  
+ActionController::RoutingError (uninitialized constant ClassesController
+Did you mean?  UsersController):
+  
+Started GET "/forms" for 127.0.0.1 at 2023-03-29 23:03:29 +0300
+Processing by FormsController#index as HTML
+  [1m[36mForm Load (0.9ms)[0m  [1m[34mSELECT "forms".* FROM "forms"[0m
+  ↳ app/controllers/forms_controller.rb:8:in `index'
+Completed 200 OK in 58ms (Views: 37.3ms | ActiveRecord: 1.7ms | Allocations: 38024)
+
+
+Started GET "/forms/2" for 127.0.0.1 at 2023-03-29 23:03:32 +0300
+Processing by FormsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mForm Load (0.4ms)[0m  [1m[34mSELECT "forms".* FROM "forms" WHERE "forms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/forms_controller.rb:45:in `set_form'
+  [1m[36mCACHE Form Load (0.0ms)[0m  [1m[34mSELECT "forms".* FROM "forms" WHERE "forms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/forms_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1254)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-03-29 23:03:40 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:8:in `index'
+Completed 200 OK in 55ms (Views: 41.5ms | ActiveRecord: 2.1ms | Allocations: 49279)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2023-03-29 23:03:43 +0300
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45:in `set_student'
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1277)
+
+
+Started GET "/forms" for 127.0.0.1 at 2023-03-29 23:04:16 +0300
+Processing by FormsController#index as HTML
+  [1m[36mForm Load (0.4ms)[0m  [1m[34mSELECT "forms".* FROM "forms"[0m
+  ↳ app/controllers/forms_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 25.9ms | ActiveRecord: 1.2ms | Allocations: 25430)
+
+
+Started GET "/forms/2" for 127.0.0.1 at 2023-03-29 23:04:22 +0300
+Processing by FormsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mForm Load (0.3ms)[0m  [1m[34mSELECT "forms".* FROM "forms" WHERE "forms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/forms_controller.rb:45:in `set_form'
+  [1m[36mCACHE Form Load (0.0ms)[0m  [1m[34mSELECT "forms".* FROM "forms" WHERE "forms"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/forms_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1259)
+
+
+Started GET "/courses" for 127.0.0.1 at 2023-03-29 23:04:28 +0300
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/courses_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 9.5ms | ActiveRecord: 0.9ms | Allocations: 16489)
+
+
+Started GET "/courses/3" for 127.0.0.1 at 2023-03-29 23:04:30 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:45:in `set_course'
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/courses_controller.rb:13:in `show'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+

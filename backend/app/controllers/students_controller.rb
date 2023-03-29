@@ -3,14 +3,15 @@ class StudentsController < ApplicationController
 
   # GET /students
   def index
-    @students = Student.all
+    students = Student.all
 
-    render json: @students
+    render json: students
   end
 
-  # GET /students/1
+  # GET /students/:id
   def show
-    render json: @student
+    student = Student.find(params[:id])
+    render json: student
   end
 
   # POST /students

@@ -3,14 +3,15 @@ class CoursesController < ApplicationController
 
   # GET /courses
   def index
-    @courses = Course.all
+    courses = Course.all
 
-    render json: @courses
+    render json: courses
   end
 
   # GET /courses/1
   def show
-    render json: @course
+    course = Course.find(params[:id])
+    render json: course
   end
 
   # POST /courses
