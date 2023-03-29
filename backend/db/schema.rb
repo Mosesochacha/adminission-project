@@ -10,22 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_29_071551) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_29_174953) do
   create_table "admissions", force: :cascade do |t|
     t.date "admission_date"
     t.string "admission_number"
+    t.integer "student_id", null: false
+    t.integer "form_id", null: false
     t.integer "form"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "classes", force: :cascade do |t|
-    t.string "class_name"
-    t.integer "year"
-    t.integer "capacity"
-    t.integer "remaining_capacity"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["form_id"], name: "index_admissions_on_form_id"
+    t.index ["student_id"], name: "index_admissions_on_student_id"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -35,6 +30,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_071551) do
     t.integer "term"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "courses_students", id: false, force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.integer "student_id", null: false
+    t.index ["course_id", "student_id"], name: "index_courses_students_on_course_id_and_student_id"
+    t.index ["student_id", "course_id"], name: "index_courses_students_on_student_id_and_course_id"
+  end
+
+  create_table "forms", force: :cascade do |t|
+    t.string "name"
+    t.integer "year"
+    t.integer "teacher_id", null: false
+    t.integer "course_id", null: false
+    t.integer "capacity"
+    t.integer "remaining_capacity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_forms_on_course_id"
+    t.index ["teacher_id"], name: "index_forms_on_teacher_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -64,4 +79,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_071551) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "admissions", "forms"
+  add_foreign_key "admissions", "students"
+  add_foreign_key "forms", "courses"
+  add_foreign_key "forms", "teachers"
 end

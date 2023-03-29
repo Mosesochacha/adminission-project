@@ -3,9 +3,8 @@ class TeachersController < ApplicationController
 
   # GET /teachers
   def index
-    @teachers = Teacher.all
-
-    render json: @teachers
+   teacher = Teacher.all
+   render json: teacher
   end
 
   # GET /teachers/1
