@@ -21,6 +21,7 @@ export default function Logout() {
   };
   return (
     <div>
+      <h1>Logout</h1>
       <NavLink to="./">
       <button onClick={handleLogout}>LOGOUT</button>
       </NavLink>
