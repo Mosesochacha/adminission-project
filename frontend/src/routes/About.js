@@ -1,4 +1,3 @@
-
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import AboutImg from "../assets/night.jpg";
@@ -8,7 +7,8 @@ import AboutUs from "../components/AboutUs";
 function About() {
   return (
     <>
-      <h1>Call The Components</h1>
+      <Navbar/> 
+      <h1>About</h1>
     </>
   );
 }

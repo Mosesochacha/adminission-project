@@ -8,7 +8,8 @@ import Trip from "../components/Trip";
 function Service() {
   return (
     <>
-      <h1>Call The Components</h1>
+      <Navbar />
+      <h1>About</h1>
     </>
   );
 }
