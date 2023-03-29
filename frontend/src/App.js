@@ -13,9 +13,8 @@ export default function App() {
       <BrowserRouter>
 
         {/* Home */}
-        
-        <Route exact path="/home">
-          <Home />
+        <Route default Route  exact path="/home" >
+          <Home /> 
         </Route>
 
         {/*about */}
@@ -33,7 +32,7 @@ export default function App() {
         {/* contact us */}
 
         <Route exact path="/contact us">
-          <Contact/>
+          <Contact />
         </Route>
 
 

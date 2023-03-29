@@ -8,8 +8,8 @@ import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <>
-     <Navbar/>  
-     <h1>About</h1>
+      <Navbar />
+      <h1>About</h1>
     </>
   );
 }
