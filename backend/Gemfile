@@ -48,3 +48,5 @@ end
 
 
 gem "sass-rails", "~> 6.0"
+
+gem "faker", "~> 3.1"
