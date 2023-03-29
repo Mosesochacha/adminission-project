@@ -3,14 +3,15 @@ class FormsController < ApplicationController
 
   # GET /forms
   def index
-    @forms = Form.all
+    forms = Form.all
 
-    render json: @forms
+    render json: forms
   end
 
-  # GET /forms/1
+  # GET /forms/:id
   def show
-    render json: @form
+    form = Form.find(params[:id])
+    render json: form
   end
 
   # POST /forms

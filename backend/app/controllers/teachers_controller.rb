@@ -3,13 +3,14 @@ class TeachersController < ApplicationController
 
   # GET /teachers
   def index
-   teacher = Teacher.all
-   render json: teacher
+   teachers = Teacher.all
+   render json: teachers
   end
 
-  # GET /teachers/1
+  # GET /teachers/:id
   def show
-    render json: @teacher
+    teacher = Teacher.find(params[:id])
+    render json: teacher
   end
 
   # POST /teachers
