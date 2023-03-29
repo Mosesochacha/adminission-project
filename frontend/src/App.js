@@ -13,7 +13,6 @@ export default function App() {
       <BrowserRouter>
 
         {/* Home */}
-        <Home/> 
         
         <Route exact path="/home">
           <Home />
