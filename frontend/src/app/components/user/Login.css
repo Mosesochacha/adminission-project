@@ -1,0 +1,66 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .sign_in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: #c4bebe;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 18rem;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 40px;
+    border: 5px solid gray;
+  }
+  
+  button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #8cf5ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  a {
+    color: #2d31e9;
+  }
+  

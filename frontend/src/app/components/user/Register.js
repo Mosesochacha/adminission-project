@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import Loading from "../loading/loader";
+import './Register.css'
 
 
 export default function Register() {
