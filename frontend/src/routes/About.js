@@ -10,9 +10,9 @@ function About() {
     {/*https://images.unsplash.com/photo-1599725427295-6ed79ff8dbef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80  */}
        <Navbar />
       <Hero 
-        cName=".hero-mid "
+        cName="hero-mid "
         heroImg={AboutImg}
-        title="Start your journey with Us"
+        title="About"
         btnClass="hide"
       />
     </>
