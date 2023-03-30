@@ -11,6 +11,9 @@
     position: relative;
 }
 
+.hero-mid h1{
+
+}
 
 
 image {
@@ -56,6 +59,12 @@ image {
     letter-spacing: 2px;
     text-decoration: none;
     border-radius: 6px;
+
+}
+
+hero-text .hide { 
+display: none;
+
 
 }
 

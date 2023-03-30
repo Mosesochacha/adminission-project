@@ -5,7 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
-
+import Registration from "./app/components/forminput/Registration";
 
 export default function App() {
   return (
@@ -13,8 +13,8 @@ export default function App() {
       <BrowserRouter>
 
         {/* Home */}
-        <Route default Route  exact path="/home" >
-          <Home /> 
+        <Route exact path="/" >
+          <Home />
         </Route>
 
         {/*about */}
@@ -35,6 +35,9 @@ export default function App() {
           <Contact />
         </Route>
 
+        <Route exact path="/Signup">
+          <Registration />
+        </Route>
 
       </BrowserRouter>
 

@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "./NavbarStyles.css";
 import { MenuItems } from "./MenuItems";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ class Navbar extends Component {
             );
           })}
           <li>
-            <button>Sign Up</button>
+            <button><NavLink to="/signup">Sign Up</NavLink></button>
           </li>
         </ul>
       </nav>
