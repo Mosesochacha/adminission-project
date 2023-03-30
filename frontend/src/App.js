@@ -17,6 +17,10 @@ export default function App() {
           <Home />
         </Route>
 
+        <Route exact path="/home" >
+          <Home />
+        </Route>
+
         {/*about */}
 
         <Route exact path="/about">
