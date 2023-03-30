@@ -13,3 +13,4 @@ Rails.application.routes.draw do
   #Routes For Teachers
   get  "/teacher", to: "teachers#index"
 end
+
