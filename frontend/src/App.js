@@ -34,7 +34,7 @@ export default function App() {
         <Route exact path="/Signup">
           <Registration />
         </Route>
-        <Route exact path ="/services">
+        <Route exact path ="/courses">
           <Service/>
         </Route>
 
