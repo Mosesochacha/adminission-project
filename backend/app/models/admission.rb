@@ -9,8 +9,10 @@ class Admission < ApplicationRecord
   }
   
   def delete_student_after_one_hour
-    self.student.delay_for(1.hour).delete
+    self.student.delay_for(1.hour).destroy
   end
-
+  
+   
+  
 
 end

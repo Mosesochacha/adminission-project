@@ -29,20 +29,19 @@ class StudentsController < ApplicationController
       course_id: params[:course_id], 
       student_id: @student.id
     )
-
+   
     if @admission.status == 'accepted'
-      NewAdmissionMailer.with(student: @student).accepted_email(@student).deliver_now
+      NewAdmissionMailer.with(student: @student).acceptance_email(@student).deliver_now
     elsif @admission.status == 'declined'
-      AdmissionStatusMailer.with(student: @admission.student).declined_email.deliver_now
+      NewAdmissionMailer.with(student: @student).declined_email(@student).deliver_now
+
        # Schedule deletion of student along with associated records after 1 hour
        @admission.delay.delete_student_after_one_hour
     end
     
     render json: { admission: @admission }, status: :ok
   end
-{
-  "status": ""
-}
+ 
   private
 
   def student_params
