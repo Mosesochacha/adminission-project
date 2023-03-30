@@ -9282,3 +9282,438 @@ Content-Transfer-Encoding: 7bit
 Completed 201 Created in 2756ms (Views: 1.3ms | ActiveRecord: 382.6ms | Allocations: 145735)
 
 
+Started POST "/students" for 127.0.0.1 at 2023-03-30 09:10:51 +0300
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"Genie", "last_name"=>"Lamp", "email"=>"ochachamoses443@gmail.com", "gender"=>"Non-binary", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021", "student"=>{"first_name"=>"Genie", "last_name"=>"Lamp", "gender"=>"Non-binary", "email"=>"ochachamoses443@gmail.com", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mStudent Create (84.9ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "email", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Genie"], ["last_name", "Lamp"], ["gender", "Non-binary"], ["email", "ochachamoses443@gmail.com"], ["date_of_birth", "2001-01-01"], ["admission_year", 2021], ["created_at", "2023-03-30 06:10:52.022955"], ["updated_at", "2023-03-30 06:10:52.022955"]]
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (255.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering new_admission_mailer/waiting_email.html.erb within layouts/mailer
+  Rendered new_admission_mailer/waiting_email.html.erb within layouts/mailer (Duration: 12.7ms | Allocations: 332)
+  Rendered layout layouts/mailer.html.erb (Duration: 13.9ms | Allocations: 580)
+NewAdmissionMailer#waiting_email: processed outbound mail in 20.6ms
+Delivered mail 642527ec78e12_43072a8073068@moses-co-ke.mail (7428.3ms)
+Date: Thu, 30 Mar 2023 09:10:52 +0300
+From: your_email@example.com
+To: ochachamoses443@gmail.com
+Message-ID: <642527ec78e12_43072a8073068@moses-co-ke.mail>
+Subject: Your admission is waiting for approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello Genie Lamp,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <a href="mailto:admissions@example.com">admissions@example.com</a>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Completed 201 Created in 7912ms (Views: 1.4ms | ActiveRecord: 342.3ms | Allocations: 25289)
+
+
+Started POST "/students" for 127.0.0.1 at 2023-03-30 09:30:15 +0300
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"Genie", "last_name"=>"Lamp", "email"=>"ochachamoses443@gmail.com", "gender"=>"Non-binary", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021", "student"=>{"first_name"=>"Genie", "last_name"=>"Lamp", "gender"=>"Non-binary", "email"=>"ochachamoses443@gmail.com", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "email", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Genie"], ["last_name", "Lamp"], ["gender", "Non-binary"], ["email", "ochachamoses443@gmail.com"], ["date_of_birth", "2001-01-01"], ["admission_year", 2021], ["created_at", "2023-03-30 06:30:15.860969"], ["updated_at", "2023-03-30 06:30:15.860969"]]
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (358.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering new_admission_mailer/waiting_email.html.erb within layouts/mailer
+  Rendered new_admission_mailer/waiting_email.html.erb within layouts/mailer (Duration: 0.2ms | Allocations: 86)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.5ms | Allocations: 179)
+NewAdmissionMailer#waiting_email: processed outbound mail in 2.3ms
+Delivered mail 64252c7841e1b_43072aa87311a@moses-co-ke.mail (5880.4ms)
+Date: Thu, 30 Mar 2023 09:30:16 +0300
+From: subaruschool@gmail.com
+To: ochachamoses443@gmail.com
+Message-ID: <64252c7841e1b_43072aa87311a@moses-co-ke.mail>
+Subject: Your admission is waiting for approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello Genie Lamp,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <a href="mailto:admissions@example.com">admissions@example.com</a>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Completed 201 Created in 6295ms (Views: 1.1ms | ActiveRecord: 359.7ms | Allocations: 24456)
+
+
+Started POST "/students" for 127.0.0.1 at 2023-03-30 09:32:08 +0300
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"Genie", "last_name"=>"Lamp", "email"=>"ochachamoses443@gmail.com", "gender"=>"Non-binary", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021", "student"=>{"first_name"=>"Genie", "last_name"=>"Lamp", "gender"=>"Non-binary", "email"=>"ochachamoses443@gmail.com", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "email", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Genie"], ["last_name", "Lamp"], ["gender", "Non-binary"], ["email", "ochachamoses443@gmail.com"], ["date_of_birth", "2001-01-01"], ["admission_year", 2021], ["created_at", "2023-03-30 06:32:08.296421"], ["updated_at", "2023-03-30 06:32:08.296421"]]
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (381.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering new_admission_mailer/waiting_email.html.erb within layouts/mailer
+  Rendered new_admission_mailer/waiting_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 86)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.7ms | Allocations: 179)
+NewAdmissionMailer#waiting_email: processed outbound mail in 5.0ms
+Delivered mail 64252ce8b55e7_43072a6c73290@moses-co-ke.mail (5572.3ms)
+Date: Thu, 30 Mar 2023 09:32:08 +0300
+From: shinobichool@gmail.com
+To: ochachamoses443@gmail.com
+Message-ID: <64252ce8b55e7_43072a6c73290@moses-co-ke.mail>
+Subject: Your admission is waiting for approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello Genie Lamp,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <a href="mailto:admissions@example.com">admissions@example.com</a>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Completed 201 Created in 6024ms (Views: 1.1ms | ActiveRecord: 384.5ms | Allocations: 25033)
+
+
+Started POST "/students" for 127.0.0.1 at 2023-03-30 10:40:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"Genie", "last_name"=>"Lamp", "email"=>"ochachamoses443@gmail.com", "gender"=>"Non-binary", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021", "student"=>{"first_name"=>"Genie", "last_name"=>"Lamp", "gender"=>"Non-binary", "email"=>"ochachamoses443@gmail.com", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mStudent Create (21.7ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "email", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Genie"], ["last_name", "Lamp"], ["gender", "Non-binary"], ["email", "ochachamoses443@gmail.com"], ["date_of_birth", "2001-01-01"], ["admission_year", 2021], ["created_at", "2023-03-30 07:40:26.107344"], ["updated_at", "2023-03-30 07:40:26.107344"]]
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (260.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering new_admission_mailer/waiting_email.html.erb within layouts/mailer
+  Rendered new_admission_mailer/waiting_email.html.erb within layouts/mailer (Duration: 14.0ms | Allocations: 682)
+  Rendered layout layouts/mailer.html.erb (Duration: 16.2ms | Allocations: 959)
+NewAdmissionMailer#waiting_email: processed outbound mail in 173.0ms
+Delivered mail 64253ceb194f5_7c682a6c-4ad@moses-co-ke.mail (7354.6ms)
+Date: Thu, 30 Mar 2023 10:40:27 +0300
+From: shinobichool@gmail.com
+To: ochachamoses443@gmail.com
+Message-ID: <64253ceb194f5_7c682a6c-4ad@moses-co-ke.mail>
+Subject: Under Approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello Genie Lamp,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <a href="mailto:admissions@example.com">admissions@example.com</a>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Completed 201 Created in 8368ms (Views: 1.1ms | ActiveRecord: 283.8ms | Allocations: 145641)
+
+
+Started POST "/students" for 127.0.0.1 at 2023-03-30 10:50:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"Genie", "last_name"=>"Lamp", "email"=>"ochachamoses443@gmail.com", "gender"=>"Non-binary", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021", "student"=>{"first_name"=>"Genie", "last_name"=>"Lamp", "gender"=>"Non-binary", "email"=>"ochachamoses443@gmail.com", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mStudent Create (0.2ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "email", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Genie"], ["last_name", "Lamp"], ["gender", "Non-binary"], ["email", "ochachamoses443@gmail.com"], ["date_of_birth", "2001-01-01"], ["admission_year", 2021], ["created_at", "2023-03-30 07:50:34.621455"], ["updated_at", "2023-03-30 07:50:34.621455"]]
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (255.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering new_admission_mailer/waiting_email.html.erb within layouts/mailer
+  Rendered new_admission_mailer/waiting_email.html.erb within layouts/mailer (Duration: 11.5ms | Allocations: 682)
+  Rendered layout layouts/mailer.html.erb (Duration: 13.3ms | Allocations: 959)
+NewAdmissionMailer#waiting_email: processed outbound mail in 174.2ms
+Delivered mail 64253f4b6973c_7f252a6c-42f@moses-co-ke.mail (9862.0ms)
+Date: Thu, 30 Mar 2023 10:50:35 +0300
+From: shinobichool@gmail.com
+To: ochachamoses443@gmail.com
+Message-ID: <64253f4b6973c_7f252a6c-42f@moses-co-ke.mail>
+Subject: Under Approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello Genie Lamp,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <a href="mailto:admissions@example.com">admissions@example.com</a>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Completed 201 Created in 10685ms (Views: 1.3ms | ActiveRecord: 257.0ms | Allocations: 146272)
+
+
+Started POST "/students" for 127.0.0.1 at 2023-03-30 10:55:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"Casey", "last_name"=>"Ochieng", "email"=>"caseyochieng46@gmail.com", "gender"=>"male", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021", "student"=>{"first_name"=>"Casey", "last_name"=>"Ochieng", "gender"=>"male", "email"=>"caseyochieng46@gmail.com", "date_of_birth"=>"2001-01-01", "admission_year"=>"2021"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "email", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Casey"], ["last_name", "Ochieng"], ["gender", "male"], ["email", "caseyochieng46@gmail.com"], ["date_of_birth", "2001-01-01"], ["admission_year", 2021], ["created_at", "2023-03-30 07:55:26.215831"], ["updated_at", "2023-03-30 07:55:26.215831"]]
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (349.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:6:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering new_admission_mailer/waiting_email.html.erb within layouts/mailer
+  Rendered new_admission_mailer/waiting_email.html.erb within layouts/mailer (Duration: 1.0ms | Allocations: 682)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.6ms | Allocations: 959)
+NewAdmissionMailer#waiting_email: processed outbound mail in 11.3ms
+Delivered mail 6425406e9ea96_7f9d2a6c2252e@moses-co-ke.mail (10867.5ms)
+Date: Thu, 30 Mar 2023 10:55:26 +0300
+From: shinobichool@gmail.com
+To: caseyochieng46@gmail.com
+Message-ID: <6425406e9ea96_7f9d2a6c2252e@moses-co-ke.mail>
+Subject: Under Approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello Casey Ochieng,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <a href="mailto:admissions@example.com">admissions@example.com</a>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
+
+  </body>
+</html>
+
+Completed 201 Created in 11325ms (Views: 1.6ms | ActiveRecord: 351.5ms | Allocations: 146277)
+
+

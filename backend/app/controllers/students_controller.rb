@@ -7,9 +7,10 @@ class StudentsController < ApplicationController
         admission_date: Date.today,
         student_id: @student.id,
         form_id: params[:form_id],
+        status: "waiting"
       )
       NewAdmissionMailer
-        .with(student: @student, status: "waiting")
+        .with(student: @student)
         .waiting_email(@student) # Provide student argument here
         .deliver_now
       render json: @student, status: :created
