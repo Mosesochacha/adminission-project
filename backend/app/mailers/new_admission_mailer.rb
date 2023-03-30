@@ -1,9 +1,9 @@
 class NewAdmissionMailer < ApplicationMailer
-  default from: 'your_email@example.com'
+  default from: 'shinobichool@gmail.com'
 
   def waiting_email(student)
     @student = student
-    mail(to: @student.email, subject: 'Your admission is waiting for approval')
+    mail(to: @student.email, subject: 'Under Approval')
   end
 
   def acceptance_email(student)
@@ -14,5 +14,10 @@ class NewAdmissionMailer < ApplicationMailer
   def declined_email(student)
     @student = student
     mail(to: @student.email, subject: 'Your admission has been declined')
+  end
+
+  def accepted_email(student)
+    @student = student
+    mail(to: @student.email, subject: 'Your admission has been accepted!')
   end
 end

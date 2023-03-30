@@ -10,17 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_29_213205) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_30_175417) do
   create_table "admissions", force: :cascade do |t|
     t.date "admission_date"
     t.string "admission_number"
-    t.integer "student_id", null: false
-    t.integer "form_id", null: false
-    t.integer "form"
+    t.integer "student_id"
+    t.integer "course_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status", default: "waiting"
-    t.index ["form_id"], name: "index_admissions_on_form_id"
+    t.index ["course_id"], name: "index_admissions_on_course_id"
     t.index ["student_id"], name: "index_admissions_on_student_id"
   end
 
@@ -29,26 +28,40 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_213205) do
     t.string "description"
     t.integer "year"
     t.integer "term"
+    t.integer "student_id"
+    t.integer "teacher_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["student_id"], name: "index_courses_on_student_id"
+    t.index ["teacher_id"], name: "index_courses_on_teacher_id"
   end
 
-  create_table "courses_students", id: false, force: :cascade do |t|
-    t.integer "course_id", null: false
-    t.integer "student_id", null: false
-    t.index ["course_id", "student_id"], name: "index_courses_students_on_course_id_and_student_id"
-    t.index ["student_id", "course_id"], name: "index_courses_students_on_student_id_and_course_id"
+  create_table "delayed_jobs", force: :cascade do |t|
+    t.integer "priority", default: 0, null: false
+    t.integer "attempts", default: 0, null: false
+    t.text "handler", null: false
+    t.text "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string "locked_by"
+    t.string "queue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
   create_table "forms", force: :cascade do |t|
     t.string "name"
     t.integer "year"
-    t.integer "teacher_id", null: false
-    t.integer "course_id", null: false
+    t.integer "teacher_id"
+    t.integer "course_id"
+    t.integer "admission_id"
     t.integer "capacity"
     t.integer "remaining_capacity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["admission_id"], name: "index_forms_on_admission_id"
     t.index ["course_id"], name: "index_forms_on_course_id"
     t.index ["teacher_id"], name: "index_forms_on_teacher_id"
   end
@@ -62,6 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_213205) do
     t.integer "admission_year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "admission_status"
   end
 
   create_table "teachers", force: :cascade do |t|
@@ -81,8 +95,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_213205) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "admissions", "forms"
+  add_foreign_key "admissions", "courses"
   add_foreign_key "admissions", "students"
+  add_foreign_key "courses", "students"
+  add_foreign_key "courses", "teachers"
+  add_foreign_key "forms", "admissions"
   add_foreign_key "forms", "courses"
   add_foreign_key "forms", "teachers"
 end

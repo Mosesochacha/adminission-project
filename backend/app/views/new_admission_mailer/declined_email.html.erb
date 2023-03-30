@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Admission Decision</h1>
+
+    <p>Hello <%= @student.first_name %> <%= @student.last_name %>,</p>
+
+    <p>We regret to inform you that your admission application has been declined. After careful consideration of your application and qualifications, we have decided that we cannot offer you a place in our program at this time.</p>
+
+    <p>Please be assured that this decision was not an easy one and was made after thorough review by our admissions committee. We wish you all the best in your future academic and career pursuits.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <%= mail_to "admissions@example.com", "admissions@example.com" %>.</p>
+
+    <p>Thank you for considering us!</p>
+
+    <p>Sincerely,</p>
+
+    <p>The Admissions Team</p>
+  </body>
+</html>
