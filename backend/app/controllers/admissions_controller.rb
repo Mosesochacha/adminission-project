@@ -15,6 +15,9 @@ class AdmissionsController < ApplicationController
 
     render json: { message: 'Admission updated successfully' }, status: :ok
   end
+  def create
+    
+  end
 
   private
 
