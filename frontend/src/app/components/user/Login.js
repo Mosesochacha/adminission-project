@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import Loading from "../loading/loader";
+import "./Login.css";
+
+
 
 export default function Login({ exportValue }) {
   const [password, setPassword] = useState("");

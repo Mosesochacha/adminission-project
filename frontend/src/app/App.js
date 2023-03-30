@@ -2,9 +2,9 @@
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import Loading from './components/loading/loader';
-import Login from './components/User/login';
-import Register from './components/User/register';
-import Logout from './components/User/logout';
+import Login from './components/user/Login';
+import Register from './components/user/Register';
+import Logout from './components/user/Logout';
 import Registration from './components/forminput/Registration';
 import Courses from './components/forminput/Courses';
 
