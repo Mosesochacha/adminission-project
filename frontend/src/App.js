@@ -5,12 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
-import Login from "./app/components/user/Login"
-import Register from "./app/components/user/Register";
-
-
-
-
+import Registration from "./app/components/forminput/Registration";
 
 export default function App() {
   return (
@@ -45,18 +40,8 @@ export default function App() {
         </Route>
 
         <Route exact path="/Signup">
-          <Register />
+          <Registration />
         </Route>
-
-        {/* Login */}
-        <Route exact path="/Login">
-          <Login />
-          </Route>
-
-          {/* Register */}
-        <Route exact path="/Register">
-          <Register />
-          </Route>
 
       </BrowserRouter>
 

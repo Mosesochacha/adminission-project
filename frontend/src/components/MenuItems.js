@@ -12,8 +12,8 @@ export const MenuItems = [
     icon: "fa-solid fa-circle-info"
   },
   {
-    title: "Services",
-    url: "/services",
+    title: "Courses",
+    url: "/Courses",
     cName: "nav-links",
     icon: "fa-solid fa-briefcase"
   },
