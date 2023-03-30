@@ -21,7 +21,7 @@ export const MenuItems = [
     title: "Contacts",
     url: "/contacts",
     cName: "nav-links",
-    icon: "fa-solid fa-house"
+    icon: "fa-regular fa-address-book fa-bounce"
   },
   {
     title: "Signup",
