@@ -4,11 +4,12 @@ import './Registration.css'
 function Registration() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [admissionYear, setAdmissionYear] = useState("");
   const [classId, setClassId] = useState("");
-  const [email, setEmail] = useState("");
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -47,6 +48,15 @@ function Registration() {
       </label>
       <br />
       <label>
+        Email:
+        <input
+          type="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+        />
+      </label>
+      <br />
+      <label>
         Date of Birth:
         <input
           type="date"
@@ -73,15 +83,7 @@ function Registration() {
         />
       </label>
       <br />
-      <label>
-        Email:
-        <input
-          type="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-        />
-      </label>
-      <br />
+   
       <button type="submit">Submit</button>
     </form>
     </div>
