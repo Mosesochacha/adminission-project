@@ -3,9 +3,8 @@ class CreateAdmissions < ActiveRecord::Migration[7.0]
     create_table :admissions do |t|
       t.date :admission_date
       t.string :admission_number
-      t.references :student, null: false, foreign_key: true
-      t.references :form, null: false, foreign_key: true
-      t.integer :form
+      t.references :student, foreign_key: true, index: true
+      t.references :course, foreign_key: true, index: true
 
       t.timestamps
     end

@@ -6,9 +6,9 @@ class NewAdmissionMailer < ApplicationMailer
     mail(to: @student.email, subject: 'Under Approval')
   end
 
-  def acceptance_email(student)
-    @student = student
-    mail(to: @student.email, subject: 'Your admission has been accepted')
+  def accepted_email
+    @student = params[:student]
+    mail(to: @student.email, subject: "Your Admission Status")
   end
 
   def declined_email(student)
