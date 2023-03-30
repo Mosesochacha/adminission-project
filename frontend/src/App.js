@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "./styles.css";
 import { BrowserRouter, Route, } from "react-router-dom";
 import Home from "./routes/Home";
@@ -27,20 +26,16 @@ export default function App() {
           <About />
         </Route>
 
-        {/* services */}
 
-        <Route exact path="/services">
-          <Service />
-        </Route>
-
-        {/* contact us */}
-
-        <Route exact path="/contact us">
-          <Contact />
+        <Route exact path="/contacts">
+        <Contact/>
         </Route>
 
         <Route exact path="/Signup">
           <Registration />
+        </Route>
+        <Route exact path ="/services">
+          <Service/>
         </Route>
 
       </BrowserRouter>
