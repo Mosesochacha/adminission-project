@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Your Admission is Waiting for Approval</h1>
+
+    <p>Hello <%= @student.first_name %> <%= @student.last_name %>,</p>
+
+    <p>We are pleased to inform you that your admission application has been received and is now awaiting approval. We appreciate your interest in our program and will notify you as soon as a decision has been reached.</p>
+
+    <p>If you have any questions or concerns, please do not hesitate to contact us at <%= mail_to "admissions@example.com", "admissions@example.com" %>.</p>
+
+    <p>Thank you for choosing us!</p>
+
+    <p>Sincerely,</p>
+
+
+    <p>The Admissions Team</p>
+  </body>
+</html>

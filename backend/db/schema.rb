@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_29_174953) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_29_213205) do
   create_table "admissions", force: :cascade do |t|
     t.date "admission_date"
     t.string "admission_number"
@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_174953) do
     t.integer "form"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "status", default: "waiting"
     t.index ["form_id"], name: "index_admissions_on_form_id"
     t.index ["student_id"], name: "index_admissions_on_student_id"
   end
@@ -56,6 +57,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_174953) do
     t.string "first_name"
     t.string "last_name"
     t.string "gender"
+    t.string "email"
     t.date "date_of_birth"
     t.integer "admission_year"
     t.datetime "created_at", null: false
