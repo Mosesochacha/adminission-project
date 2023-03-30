@@ -92,6 +92,16 @@ export default function Login({ exportValue }) {
               />
               <br />
               <div className="load">{isLoggingIn && <Loading />}</div>
+              
+            {/* 
+              <div onClick={handleLogin}>
+                <button type="submit">Login</button>
+              </div>
+
+              <button onClick={handleLogin} type="submit" className="mt-3">
+                Login
+              </button> */}
+
               <center>
                 <button
                   onClick={() => {
