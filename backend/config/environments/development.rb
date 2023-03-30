@@ -68,6 +68,9 @@ Rails.application.configure do
     authentication: 'plain',
     enable_starttls_auto: true
   }
+
+
+  config.active_job.queue_adapter = :delayed_job
   
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
