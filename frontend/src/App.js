@@ -42,6 +42,9 @@ export default function App() {
           <Contact />
         </Route>
 
+ <Route exact path ="/courses">
+          <Service/>
+
         <Route exact path="/Signup">
           <Register />
         </Route>
