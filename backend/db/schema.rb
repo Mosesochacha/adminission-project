@@ -28,6 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_30_175417) do
     t.string "description"
     t.integer "year"
     t.integer "term"
+    t.string "title"
     t.integer "student_id"
     t.integer "teacher_id"
     t.datetime "created_at", null: false

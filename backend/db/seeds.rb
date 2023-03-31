@@ -39,6 +39,7 @@ end
 10.times do
   Course.create!(
     name: Faker::Educator.course_name,
+    title: Faker::Educator.course_title,
     description: Faker::Lorem.paragraph_by_chars(number: 256),
     year: Faker::Number.between(from: 1, to: 5),
     term: Faker::Number.between(from: 1, to: 3),
