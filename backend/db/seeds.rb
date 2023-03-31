@@ -16,6 +16,7 @@ end
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
+    image: Faker::LoremFlickr.image(size: "300x300", search_terms: ['teacher']),
     phone_number: Faker::PhoneNumber.phone_number
   )
 end
@@ -27,6 +28,7 @@ end
     last_name: Faker::Name.last_name,
     gender: Faker::Gender.binary_type,
     email: Faker::Internet.email,
+    image: Faker::LoremFlickr.image(size: "300x300", search_terms: ['student']),
     date_of_birth: Faker::Date.between(from: '1980-01-01', to: '2004-12-31'),
     admission_year: Faker::Number.between(from: 2015, to: 2021),
     admission_status: Faker::Boolean.boolean
@@ -42,6 +44,7 @@ end
     term: Faker::Number.between(from: 1, to: 3),
     student_id: Faker::Number.between(from: 1, to: 20),
     teacher_id: Faker::Number.between(from: 1, to: 5)
+
   )
 end
 
