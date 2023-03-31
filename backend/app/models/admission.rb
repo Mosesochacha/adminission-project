@@ -1,5 +1,5 @@
 class Admission < ApplicationRecord
-  belongs_to :student
+  belongs_to :student , dependent: :destroy
   has_one :form
 
   enum status: {
