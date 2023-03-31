@@ -17,7 +17,7 @@ export default function Login({ exportValue }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     setIsLoggingIn(true);
-    const res = await fetch("API", {
+    const res = await fetch("", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,9 +41,7 @@ export default function Login({ exportValue }) {
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
-    const res = await fetch(
-      "API",
-      {
+    const res = await fetch("", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

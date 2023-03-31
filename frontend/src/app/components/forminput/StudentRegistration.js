@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import './Registration.css'
+import './StudentRegistration.css'
 
-function Registration() {
+function StudentRegistration() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,7 +19,7 @@ function Registration() {
   return (
     <div className="card">
       <form onSubmit={handleSubmit}>
-        <h1>Registration</h1>
+        <h1>StudentRegistration</h1>
       <label>
         First Name:
         <input
@@ -90,4 +90,4 @@ function Registration() {
     
   );
 }
- export default Registration
+ export default StudentRegistration

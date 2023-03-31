@@ -5,7 +5,7 @@ import Loading from './components/loading/loader';
 import Login from './components/user/Login';
 import Register from './components/user/Register';
 import Logout from './components/user/Logout';
-import Registration from './components/forminput/Registration';
+import StudentRegistration from './components/forminput/StudentRegistration';
 import Courses from './components/forminput/Courses';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
      <Login/>
      <Register/>
      <Logout/>
-     <Registration/>
+     <StudentRegistration/>
      <Courses/>
       </Route>
       </BrowserRouter>
