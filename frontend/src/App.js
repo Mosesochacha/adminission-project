@@ -1,69 +1,29 @@
-/* eslint-disable no-unused-vars */
-import "./styles.css";
-import { BrowserRouter, Route } from "react-router-dom";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Service from "./routes/Service";
-import Contact from "./routes/Contact";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/casey/routes/Home"
+import About from "./components/casey/routes/About";
+import Service from "./components/casey/routes/Service";
+import Contact from "./components/casey/routes/Contact";
+import Loading from "./components/loading/loader";
+import Login from "./components/user/Login";
+import Register from "./components/user/Register";
 
-import Login from "./app/components/user/Login"
-import Register from "./app/components/user/Register";
-import StudentRegistration from "./app/components/forminput/StudentRegistration";
-
-export default function App() {
+function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-
-        {/* Home */}
-        <Route exact path="/" >
-          <Home />
-        </Route>
-
-        <Route exact path="/home" >
-          <Home />
-        </Route>
-
-        {/*about */}
-
-        <Route exact path="/about">
-          <About />
-        </Route>
-
-        {/* services */}
-
-        <Route exact path="/services">
-          <Service />
-        </Route>
-
-        {/* contact us */}
-
-        <Route exact path="/contacts">
-          <Contact />
-        </Route>
-
-        <Route exact path="/course">
-          <Service />
-        </Route> 
-        {/* closing tag added */}
-
-        <Route exact path="/Signup">
-          <Register />
-        </Route>
-
-        {/* Login */}
-        <Route exact path="/Login">
-          <Login />
-        </Route>
-
-        {/* Register */}
-        <Route exact path="/Register">
-          <Register />
-        </Route>
-
-      </BrowserRouter>
-
-
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/course" component={Service} />
+          <Route exact path="/contacts" component={Contact} />
+          <Route exact path="/signup" component={Register} />
+          <Route exact path="/login" component={Login} />
+          <Route component={Loading} />
+        </Switch>
+      </Router>
     </div>
   );
 }
+
+export default App;

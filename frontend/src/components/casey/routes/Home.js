@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import Destination from "../components/Destination";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Trip from "../components/Trip";
+import Destination from "./Destination";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Trip from "./Trip";
 
 function Home() {
   return (

@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Loading from "../loading/loader";
-import "./Login.css";
 
 
-
-export default function Login({ exportValue }) {
+export default function Login() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -17,7 +14,7 @@ export default function Login({ exportValue }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     setIsLoggingIn(true);
-    const res = await fetch("", {
+    const res = await fetch("https://admn-wzcg.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,16 +29,20 @@ export default function Login({ exportValue }) {
       setMessage(data.message);
       setIsLoggedIn(true);
       history.push("/home");
+      window.location.reload();
     } else {
       setMessage("");
-      setError(data.error);
+      setError(data.errors);
+      console.log(data.errors);
       setIsLoggingIn(false);
     }
   };
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
-    const res = await fetch("", {
+    const res = await fetch(
+      "https://admn-wzcg.onrender.com/r/reset-password",
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,9 +67,7 @@ export default function Login({ exportValue }) {
   }
 
   return (
-    
     <center className="mt-5 ">
-      <h1>Login</h1>
       <div className="sign_in">
         <form onSubmit={handleLogin}>
           <div className="card " style={{ width: "16rem" }}>
@@ -89,27 +88,11 @@ export default function Login({ exportValue }) {
                 onChange={(e) => setPassword(e.target.value)}
               />
               <br />
-              <div className="load">{isLoggingIn && <Loading />}</div>
               
-            {/* 
-              <div onClick={handleLogin}>
-                <button type="submit">Login</button>
-              </div>
-
-              <button onClick={handleLogin} type="submit" className="mt-3">
-                Login
-              </button> */}
-
               <center>
-                <button
-                  onClick={() => {
-                    exportValue(email);
-                  }}
-                  type="submit"
-                  className="mt-3"
-                >
-                  Login
-                </button>
+              <button type="submit" disabled={isLoggingIn}>
+            {isLoggingIn ? "LoggingIn..." : "LOGIN"}
+          </button>
                 <br />
                 <div>
                   {message && <p>{message}</p>}
@@ -119,7 +102,7 @@ export default function Login({ exportValue }) {
                 <p>
                   Not a member?{" "}
                   <NavLink
-                    to="/register"
+                    to="/signup"
                     className="link
 "
                     style={{ color: "red" }}
