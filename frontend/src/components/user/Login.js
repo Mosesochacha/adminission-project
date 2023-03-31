@@ -14,7 +14,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     setIsLoggingIn(true);
-    const res = await fetch("http://localhost:4000/login", {
+    const res = await fetch("https://admn-wzcg.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
