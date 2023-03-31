@@ -1,0 +1,5 @@
+en:
+  faker:
+    educator:
+      course_name: ["Computer Science", "Mathematics", "Biology", "Chemistry", "Physics", "Art", "Music", "History", "English", "Physical Education"]
+      course_title: ["Fundamentals of Programming", "Database Administration", "Data Analysis", "Web Development", "Computer Networking", "Algorithms and Data Structures", "Artificial Intelligence", "Operating Systems", "Computer Graphics", "Human-Computer Interaction"]
