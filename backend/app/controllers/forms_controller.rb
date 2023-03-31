@@ -4,7 +4,6 @@ class FormsController < ApplicationController
   # GET /forms
   def index
     forms = Form.all
-
     render json: forms
   end
 
