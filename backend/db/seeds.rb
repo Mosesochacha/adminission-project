@@ -1,5 +1,5 @@
-puts "Creating ..."
 require 'faker'
+puts "Seeding records..."
 
 # Create some users
 5.times do
@@ -36,16 +36,22 @@ end
 end
 
 # Create some courses
+titles = []
 10.times do
+  begin
+    title = Faker::Educator.course_title
+  end while titles.include?(title) # loop until a unique title is generated
+
+  titles << title # add the new title to the array
+
   Course.create!(
     name: Faker::Educator.course_name,
-    title: Faker::Educator.course_title,
-    description: Faker::Lorem.paragraph_by_chars(number: 256),
+    title: title,
+    description: Faker::Lorem.sentence(word_count: 10),
     year: Faker::Number.between(from: 1, to: 5),
     term: Faker::Number.between(from: 1, to: 3),
     student_id: Faker::Number.between(from: 1, to: 20),
     teacher_id: Faker::Number.between(from: 1, to: 5)
-
   )
 end
 
@@ -73,4 +79,4 @@ end
   )
 end
 
-puts "Complete"
+puts "Seeding completed successfully!"
