@@ -1,0 +1,218 @@
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "admissions"[0m
+  [1m[35m (135.0ms)[0m  [1m[35mCREATE TABLE "admissions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "admission_date" date, "admission_number" varchar, "student_id" integer, "course_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "status" varchar DEFAULT 'waiting')[0m
+  [1m[35m (209.3ms)[0m  [1m[35mCREATE INDEX "index_admissions_on_course_id" ON "admissions" ("course_id")[0m
+  [1m[35m (242.7ms)[0m  [1m[35mCREATE INDEX "index_admissions_on_student_id" ON "admissions" ("student_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "courses"[0m
+  [1m[35m (230.7ms)[0m  [1m[35mCREATE TABLE "courses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "year" integer, "term" integer, "student_id" integer, "teacher_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (220.6ms)[0m  [1m[35mCREATE INDEX "index_courses_on_student_id" ON "courses" ("student_id")[0m
+  [1m[35m (200.7ms)[0m  [1m[35mCREATE INDEX "index_courses_on_teacher_id" ON "courses" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "delayed_jobs"[0m
+  [1m[35m (219.9ms)[0m  [1m[35mCREATE TABLE "delayed_jobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime(6), "locked_at" datetime(6), "failed_at" datetime(6), "locked_by" varchar, "queue" varchar, "created_at" datetime(6), "updated_at" datetime(6))[0m
+  [1m[35m (269.8ms)[0m  [1m[35mCREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "forms"[0m
+  [1m[35m (231.3ms)[0m  [1m[35mCREATE TABLE "forms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "year" integer, "teacher_id" integer, "course_id" integer, "admission_id" integer, "capacity" integer, "remaining_capacity" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (342.7ms)[0m  [1m[35mCREATE INDEX "index_forms_on_admission_id" ON "forms" ("admission_id")[0m
+  [1m[35m (336.4ms)[0m  [1m[35mCREATE INDEX "index_forms_on_course_id" ON "forms" ("course_id")[0m
+  [1m[35m (287.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_teacher_id" ON "forms" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "students"[0m
+  [1m[35m (208.9ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "gender" varchar, "email" varchar, "image" varchar, "date_of_birth" date, "admission_year" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "admission_status" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "teachers"[0m
+  [1m[35m (231.3ms)[0m  [1m[35mCREATE TABLE "teachers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "phone_number" varchar, "image" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (220.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_digest" varchar, "username" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aadmissions" ("id" integer NOT NULL PRIMARY KEY, "admission_date" date DEFAULT NULL, "admission_number" varchar DEFAULT NULL, "student_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "status" varchar DEFAULT 'waiting')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aadmissions_on_student_id" ON "aadmissions" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aadmissions_on_course_id" ON "aadmissions" ("course_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aadmissions" ("id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status")
+                     SELECT "id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status" FROM "admissions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "admissions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "admissions" ("id" integer NOT NULL PRIMARY KEY, "admission_date" date DEFAULT NULL, "admission_number" varchar DEFAULT NULL, "student_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "status" varchar DEFAULT 'waiting', CONSTRAINT "fk_rails_91f45ac72b"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_admissions_on_course_id" ON "admissions" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_admissions_on_student_id" ON "admissions" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "admissions" ("id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status")
+                     SELECT "id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status" FROM "aadmissions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aadmissions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (197.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aadmissions" ("id" integer NOT NULL PRIMARY KEY, "admission_date" date DEFAULT NULL, "admission_number" varchar DEFAULT NULL, "student_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "status" varchar DEFAULT 'waiting')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aadmissions_on_student_id" ON "aadmissions" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aadmissions_on_course_id" ON "aadmissions" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aadmissions" ("id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status")
+                     SELECT "id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status" FROM "admissions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "admissions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "admissions" ("id" integer NOT NULL PRIMARY KEY, "admission_date" date DEFAULT NULL, "admission_number" varchar DEFAULT NULL, "student_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "status" varchar DEFAULT 'waiting', CONSTRAINT "fk_rails_91f45ac72b"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+, CONSTRAINT "fk_rails_23d13ed26b"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_admissions_on_course_id" ON "admissions" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_admissions_on_student_id" ON "admissions" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "admissions" ("id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status")
+                     SELECT "id","admission_date","admission_number","student_id","course_id","created_at","updated_at","status" FROM "aadmissions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aadmissions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (210.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acourses" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "term" integer DEFAULT NULL, "student_id" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acourses_on_teacher_id" ON "acourses" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acourses_on_student_id" ON "acourses" ("student_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acourses" ("id","name","description","year","term","student_id","teacher_id","created_at","updated_at")
+                     SELECT "id","name","description","year","term","student_id","teacher_id","created_at","updated_at" FROM "courses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "courses" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "term" integer DEFAULT NULL, "student_id" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_06d459a540"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_courses_on_student_id" ON "courses" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_courses_on_teacher_id" ON "courses" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "courses" ("id","name","description","year","term","student_id","teacher_id","created_at","updated_at")
+                     SELECT "id","name","description","year","term","student_id","teacher_id","created_at","updated_at" FROM "acourses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acourses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (267.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acourses" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "term" integer DEFAULT NULL, "student_id" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acourses_on_teacher_id" ON "acourses" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acourses_on_student_id" ON "acourses" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "acourses" ("id","name","description","year","term","student_id","teacher_id","created_at","updated_at")
+                     SELECT "id","name","description","year","term","student_id","teacher_id","created_at","updated_at" FROM "courses"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "courses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "courses" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "description" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "term" integer DEFAULT NULL, "student_id" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_06d459a540"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_a68eff6aff"
+FOREIGN KEY ("teacher_id")
+  REFERENCES "teachers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_courses_on_student_id" ON "courses" ("student_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_courses_on_teacher_id" ON "courses" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "courses" ("id","name","description","year","term","student_id","teacher_id","created_at","updated_at")
+                     SELECT "id","name","description","year","term","student_id","teacher_id","created_at","updated_at" FROM "acourses"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acourses"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (179.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aforms" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "admission_id" integer DEFAULT NULL, "capacity" integer DEFAULT NULL, "remaining_capacity" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_teacher_id" ON "aforms" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_course_id" ON "aforms" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_admission_id" ON "aforms" ("admission_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aforms" ("id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at")
+                     SELECT "id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at" FROM "forms"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "forms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "forms" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "admission_id" integer DEFAULT NULL, "capacity" integer DEFAULT NULL, "remaining_capacity" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_09555d1ae7"
+FOREIGN KEY ("admission_id")
+  REFERENCES "admissions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_admission_id" ON "forms" ("admission_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_course_id" ON "forms" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_teacher_id" ON "forms" ("teacher_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "forms" ("id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at")
+                     SELECT "id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at" FROM "aforms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aforms"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (326.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aforms" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "admission_id" integer DEFAULT NULL, "capacity" integer DEFAULT NULL, "remaining_capacity" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_teacher_id" ON "aforms" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_course_id" ON "aforms" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_admission_id" ON "aforms" ("admission_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aforms" ("id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at")
+                     SELECT "id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at" FROM "forms"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "forms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "forms" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "admission_id" integer DEFAULT NULL, "capacity" integer DEFAULT NULL, "remaining_capacity" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_09555d1ae7"
+FOREIGN KEY ("admission_id")
+  REFERENCES "admissions" ("id")
+, CONSTRAINT "fk_rails_68be0f65c2"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_admission_id" ON "forms" ("admission_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_course_id" ON "forms" ("course_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_teacher_id" ON "forms" ("teacher_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "forms" ("id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at")
+                     SELECT "id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at" FROM "aforms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aforms"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (276.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aforms" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "admission_id" integer DEFAULT NULL, "capacity" integer DEFAULT NULL, "remaining_capacity" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_teacher_id" ON "aforms" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_course_id" ON "aforms" ("course_id")[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE INDEX "tindex_aforms_on_admission_id" ON "aforms" ("admission_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aforms" ("id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at")
+                     SELECT "id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at" FROM "forms"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "forms"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "forms" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "year" integer DEFAULT NULL, "teacher_id" integer DEFAULT NULL, "course_id" integer DEFAULT NULL, "admission_id" integer DEFAULT NULL, "capacity" integer DEFAULT NULL, "remaining_capacity" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_68be0f65c2"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+, CONSTRAINT "fk_rails_09555d1ae7"
+FOREIGN KEY ("admission_id")
+  REFERENCES "admissions" ("id")
+, CONSTRAINT "fk_rails_5be5ad0150"
+FOREIGN KEY ("teacher_id")
+  REFERENCES "teachers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_forms_on_admission_id" ON "forms" ("admission_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_forms_on_course_id" ON "forms" ("course_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_forms_on_teacher_id" ON "forms" ("teacher_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "forms" ("id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at")
+                     SELECT "id","name","year","teacher_id","course_id","admission_id","capacity","remaining_capacity","created_at","updated_at" FROM "aforms"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aforms"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (200.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (407.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (258.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230330175417)[0m
+  [1m[35m (184.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230328082018),
+(20230329055638),
+(20230329070059),
+(20230329071247),
+(20230329071551),
+(20230329170647),
+(20230329213205),
+(20230330093159);
+
+[0m
