@@ -15,3 +15,16 @@ I, [2023-03-31T00:19:51.181150 #103545]  INFO -- : Migrating to CreateForms (202
 I, [2023-03-31T00:19:51.501858 #103545]  INFO -- : Migrating to AddStatus (20230329213205)
 I, [2023-03-31T00:19:51.738500 #103545]  INFO -- : Migrating to AddAdmissionStatusToStudent (20230330093159)
 I, [2023-03-31T00:19:51.979006 #103545]  INFO -- : Migrating to CreateDelayedJobs (20230330175417)
+W, [2023-03-31T12:18:36.840207 #21654]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2023-03-31T12:18:52.209361 #21709]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2023-03-31T12:19:04.608218 #21752]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2023-03-31T12:19:05.119731 #21752]  INFO -- : Migrating to CreateUsers (20230328082018)
+I, [2023-03-31T12:19:05.246094 #21752]  INFO -- : Migrating to CreateStudents (20230329055638)
+I, [2023-03-31T12:19:05.368825 #21752]  INFO -- : Migrating to CreateAdmissions (20230329070059)
+I, [2023-03-31T12:19:05.492118 #21752]  INFO -- : Migrating to CreateTeachers (20230329071247)
+I, [2023-03-31T12:19:05.615164 #21752]  INFO -- : Migrating to CreateCourses (20230329071551)
+I, [2023-03-31T12:19:05.749841 #21752]  INFO -- : Migrating to CreateForms (20230329170647)
+I, [2023-03-31T12:19:05.883654 #21752]  INFO -- : Migrating to AddStatus (20230329213205)
+I, [2023-03-31T12:19:05.982159 #21752]  INFO -- : Migrating to AddAdmissionStatusToStudent (20230330093159)
+I, [2023-03-31T12:19:06.080573 #21752]  INFO -- : Migrating to CreateDelayedJobs (20230330175417)
+W, [2023-03-31T12:19:16.683947 #21799]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
