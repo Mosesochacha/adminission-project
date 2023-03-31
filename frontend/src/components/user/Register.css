@@ -2,58 +2,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 400vh;
+}
+
+.card {
+  background-color: #cfcccc;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  margin-top: 1rem;
 }
 
 h1 {
+  margin-bottom: 1rem;
   font-size: 2rem;
   text-align: center;
 }
 
-.sign_in {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.card {
-  background-color: #c4bebe;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 18rem;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 label {
   margin-top: 1rem;
+  display: block;
   font-weight: bold;
 }
 
-input[type="email"],
-input[type="password"] {
+input {
   margin-top: 0.5rem;
   width: 100%;
   padding: 0.5rem;
-  border-radius: 40px;
-  border: 5px solid gray;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
-button[type="submit"] {
+/* button[type="submit"] {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #8cf5ec;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 p {
   margin-top: 1rem;
@@ -61,5 +52,5 @@ p {
 }
 
 a {
-  color: #2d31e9;
+  color: #314ce7;
 }

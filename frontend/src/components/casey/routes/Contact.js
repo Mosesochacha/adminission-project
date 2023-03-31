@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
- import Footer from "../components/Footer";
-import ContactForm from "../components/ContactForm";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+ import Footer from "./Footer"
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (

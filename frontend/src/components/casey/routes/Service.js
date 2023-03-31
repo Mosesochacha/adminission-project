@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Trip from "../components/Trip";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Trip from "./Trip";
 
 function Service() {
   return (
