@@ -1,6 +1,6 @@
 
 import React ,{ useState , useEffect }from "react";
-import DestinationData from "./DestinationData";
+// import DestinationData from "./DestinationData";
 import "./DestinationStyles.css";
 import axios from "axios";
 
@@ -23,7 +23,7 @@ const Destination = () => {
         {courses.map((course)=>{
           return(
             <div key={course.id}>
-               <p>name{course.decription}</p> 
+               <p>name{course.description}</p> 
                <div className="first-des">
         {/* description of the courses */}
         <div className="des-text">
@@ -35,16 +35,15 @@ const Destination = () => {
       {/* course images */}
         <div className="image">
         <img alt="courseImage1" src="/"/>
-       
+        <img alt="courseImage2" src="/"/>
           
        </div>
 
       </div>
-               <img alt="courseImage2" src={course.image}/>
             </div>
           )
         })}
-     
+      
 
     </div>
   );
