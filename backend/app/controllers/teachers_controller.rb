@@ -16,7 +16,6 @@ class TeachersController < ApplicationController
   # POST /teachers
   def create
     @teacher = Teacher.new(teacher_params)
-
     if @teacher.save
       render json: @teacher, status: :created, location: @teacher
     else
