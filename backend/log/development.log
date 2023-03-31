@@ -6843,3 +6843,287 @@ Processing by CoursesController#show as HTML
 Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1238)
 
 
+Started GET "/" for 127.0.0.1 at 2023-03-31 00:19:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 825)
+Completed 200 OK in 37ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 6620)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2023-03-31 00:20:47 +0300
+  
+SyntaxError (/home/user/Desktop/yayo/adminission-project/backend/app/controllers/teachers_controller.rb:3: syntax error, unexpected ':', expecting `end'
+  dependent: :destroy
+           ^
+):
+  
+app/controllers/teachers_controller.rb:3: syntax error, unexpected ':', expecting `end'
+app/controllers/teachers_controller.rb:3: syntax error, unexpected ':', expecting `end'
+Started GET "/teachers/1" for 127.0.0.1 at 2023-03-31 01:18:57 +0300
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.3ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+  [1m[36mCACHE Teacher Load (0.0ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:12:in `show'
+Completed 200 OK in 60ms (Views: 0.7ms | ActiveRecord: 1.6ms | Allocations: 23373)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2023-03-31 01:19:39 +0300
+Processing by TeachersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+  [1m[36mCACHE Teacher Load (0.0ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:12:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1030)
+
+
+Started PATCH "/teachers/1" for 127.0.0.1 at 2023-03-31 01:20:06 +0300
+Processing by TeachersController#update as */*
+  Parameters: {"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z", "teacher"=>{"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z"}}
+  [1m[36mTeacher Load (0.2ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+[31mUnpermitted parameters: :id, :created_at, :updated_at. Context: { controller: TeachersController, action: update, request: #<ActionDispatch::Request:0x00007ff0ac01f1b8>, params: {"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z", "controller"=>"teachers", "action"=>"update", "teacher"=>{"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/teachers_controller.rb:29:in `update'
+  [1m[36mTeacher Update (0.3ms)[0m  [1m[33mUPDATE "teachers" SET "first_name" = ?, "updated_at" = ? WHERE "teachers"."id" = ?[0m  [["first_name", "Haroldy"], ["updated_at", "2023-03-30 22:20:06.711730"], ["id", 1]]
+  ↳ app/controllers/teachers_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (126.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/teachers_controller.rb:29:in `update'
+Completed 200 OK in 135ms (Views: 0.4ms | ActiveRecord: 127.2ms | Allocations: 3254)
+
+
+Started GET "/teachers/1" for 127.0.0.1 at 2023-03-31 01:20:13 +0300
+Processing by TeachersController#show as */*
+  Parameters: {"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z", "teacher"=>{"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z"}}
+  [1m[36mTeacher Load (0.2ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+  [1m[36mCACHE Teacher Load (0.0ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:12:in `show'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1013)
+
+
+Started DELETE "/teachers/1" for 127.0.0.1 at 2023-03-31 01:20:20 +0300
+Processing by TeachersController#destroy as */*
+  Parameters: {"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z", "teacher"=>{"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z"}}
+  [1m[36mTeacher Load (0.2ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mForm Load (0.3ms)[0m  [1m[34mSELECT "forms".* FROM "forms" WHERE "forms"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" INNER JOIN "admissions" ON "students"."id" = "admissions"."student_id" WHERE "admissions"."form_id" = ?[0m  [["form_id", 2]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mForm Destroy (0.5ms)[0m  [1m[31mDELETE FROM "forms" WHERE "forms"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" INNER JOIN "admissions" ON "students"."id" = "admissions"."student_id" WHERE "admissions"."form_id" = ?[0m  [["form_id", 13]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mForm Destroy (0.2ms)[0m  [1m[31mDELETE FROM "forms" WHERE "forms"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" INNER JOIN "admissions" ON "students"."id" = "admissions"."student_id" WHERE "admissions"."form_id" = ?[0m  [["form_id", 26]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mAdmission Load (0.1ms)[0m  [1m[34mSELECT "admissions".* FROM "admissions" WHERE "admissions"."form_id" = ? AND "admissions"."student_id" = ?[0m  [["form_id", 26], ["student_id", 43]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mAdmission Destroy (0.2ms)[0m  [1m[31mDELETE FROM "admissions" WHERE "admissions"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent::HABTM_Courses Delete All (0.1ms)[0m  [1m[31mDELETE FROM "courses_students" WHERE "courses_students"."student_id" = ?[0m  [["student_id", 43]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 43]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mForm Destroy (0.2ms)[0m  [1m[31mDELETE FROM "forms" WHERE "forms"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" INNER JOIN "admissions" ON "students"."id" = "admissions"."student_id" WHERE "admissions"."form_id" = ?[0m  [["form_id", 38]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mAdmission Load (0.1ms)[0m  [1m[34mSELECT "admissions".* FROM "admissions" WHERE "admissions"."form_id" = ? AND "admissions"."student_id" = ?[0m  [["form_id", 38], ["student_id", 39]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mAdmission Destroy (0.2ms)[0m  [1m[31mDELETE FROM "admissions" WHERE "admissions"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent::HABTM_Courses Delete All (0.2ms)[0m  [1m[31mDELETE FROM "courses_students" WHERE "courses_students"."student_id" = ?[0m  [["student_id", 39]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mStudent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 39]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 6.1ms | Allocations: 108080)
+
+
+  
+ActiveRecord::InvalidForeignKey (SQLite3::ConstraintException: FOREIGN KEY constraint failed):
+  
+app/controllers/teachers_controller.rb:38:in `destroy'
+Started DELETE "/teachers" for 127.0.0.1 at 2023-03-31 01:20:27 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/teachers"):
+  
+Started DELETE "/students" for 127.0.0.1 at 2023-03-31 01:22:51 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/students"):
+  
+Started GET "/students/1" for 127.0.0.1 at 2023-03-31 01:22:58 +0300
+Processing by StudentsController#show as */*
+  Parameters: {"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z", "student"=>{"id"=>"1", "first_name"=>"Haroldy", "last_name"=>"Gerhold", "created_at"=>"2023-03-29T17:57:19.336Z", "updated_at"=>"2023-03-29T17:57:19.336Z"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45:in `set_student'
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:13:in `show'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 1494)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2023-03-31 01:23:14 +0300
+Processing by StudentsController#show as */*
+  Parameters: {"id"=>"1", "first_name"=>"Donetta", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z", "student"=>{"id"=>"1", "first_name"=>"Donetta", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z"}}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45:in `set_student'
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:13:in `show'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 1011)
+
+
+Started PATCH "/students/1" for 127.0.0.1 at 2023-03-31 01:23:30 +0300
+Processing by StudentsController#update as */*
+  Parameters: {"id"=>"1", "first_name"=>"Donet", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z", "student"=>{"id"=>"1", "first_name"=>"Donet", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45:in `set_student'
+[31mUnpermitted parameters: :id, :created_at, :updated_at. Context: { controller: StudentsController, action: update, request: #<ActionDispatch::Request:0x00007ff0bcea4228>, params: {"id"=>"1", "first_name"=>"Donet", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z", "controller"=>"students", "action"=>"update", "student"=>{"id"=>"1", "first_name"=>"Donet", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:30:in `update'
+  [1m[36mStudent Update (0.3ms)[0m  [1m[33mUPDATE "students" SET "first_name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["first_name", "Donet"], ["updated_at", "2023-03-30 22:23:30.541496"], ["id", 1]]
+  ↳ app/controllers/students_controller.rb:30:in `update'
+  [1m[36mTRANSACTION (215.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:30:in `update'
+Completed 200 OK in 225ms (Views: 0.4ms | ActiveRecord: 216.5ms | Allocations: 2839)
+
+
+Started DELETE "/students/1" for 127.0.0.1 at 2023-03-31 01:26:47 +0300
+Processing by StudentsController#destroy as */*
+  Parameters: {"id"=>"1", "first_name"=>"Donet", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z", "student"=>{"id"=>"1", "first_name"=>"Donet", "last_name"=>"Cremin", "gender"=>"Male", "date_of_birth"=>"2008-10-09", "admission_year"=>2013, "created_at"=>"2023-03-29T17:57:26.283Z", "updated_at"=>"2023-03-29T17:57:26.283Z"}}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:45:in `set_student'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:39:in `destroy'
+  [1m[36mStudent::HABTM_Courses Delete All (0.2ms)[0m  [1m[31mDELETE FROM "courses_students" WHERE "courses_students"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:39:in `destroy'
+  [1m[36mStudent Destroy (0.8ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/students_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/students_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.4ms | Allocations: 2625)
+
+
+  
+ActiveRecord::InvalidForeignKey (SQLite3::ConstraintException: FOREIGN KEY constraint failed):
+  
+app/controllers/students_controller.rb:39:in `destroy'
+Started GET "/" for 127.0.0.1 at 2023-03-31 09:39:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 826)
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 6626)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-03-31 09:41:03 +0300
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:8:in `index'
+Completed 200 OK in 94ms (Views: 69.7ms | ActiveRecord: 2.6ms | Allocations: 53258)
+
+
+Started GET "/students" for 127.0.0.1 at 2023-03-31 09:41:17 +0300
+Processing by StudentsController#index as */*
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/controllers/students_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.7ms | Allocations: 22475)
+
+
+Started GET "/studentss" for 127.0.0.1 at 2023-03-31 09:41:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/studentss"):
+  
+Started POST "/students" for 127.0.0.1 at 2023-03-31 09:43:06 +0300
+Processing by StudentsController#create as */*
+  Parameters: {"first_name"=>"loki", "last_name"=>"odinson", "gender"=>"Male", "date_of_birth"=>"2006-10-09", "admission_year"=>2013, "student"=>{"first_name"=>"loki", "last_name"=>"odinson", "gender"=>"Male", "date_of_birth"=>"2006-10-09", "admission_year"=>2013}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:21:in `create'
+  [1m[36mStudent Create (0.3ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "gender", "date_of_birth", "admission_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "loki"], ["last_name", "odinson"], ["gender", "Male"], ["date_of_birth", "2006-10-09"], ["admission_year", 2013], ["created_at", "2023-03-31 06:43:06.534789"], ["updated_at", "2023-03-31 06:43:06.534789"]]
+  ↳ app/controllers/students_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (141.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:21:in `create'
+Completed 201 Created in 151ms (Views: 2.4ms | ActiveRecord: 141.5ms | Allocations: 3093)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2023-03-31 09:44:27 +0300
+Processing by TeachersController#index as */*
+  Parameters: {"first_name"=>"loki", "last_name"=>"odinson", "gender"=>"Male", "date_of_birth"=>"2006-10-09", "admission_year"=>2013, "teacher"=>{"first_name"=>"loki", "last_name"=>"odinson"}}
+  [1m[36mTeacher Load (0.4ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers"[0m
+  ↳ app/controllers/teachers_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 1.2ms | Allocations: 19083)
+
+
+Started PATCH "/teachers" for 127.0.0.1 at 2023-03-31 09:45:44 +0300
+  
+ActionController::RoutingError (No route matches [PATCH] "/teachers"):
+  
+Started PATCH "/teachers/1" for 127.0.0.1 at 2023-03-31 09:45:50 +0300
+Processing by TeachersController#update as */*
+  Parameters: {"id"=>"1", "first_name"=>"Harold", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "teacher"=>{"id"=>"1", "first_name"=>"Harold", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572"}}
+  [1m[36mTeacher Load (0.2ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+[31mUnpermitted parameter: :id. Context: { controller: TeachersController, action: update, request: #<ActionDispatch::Request:0x00007f0b041f2c58>, params: {"id"=>"1", "first_name"=>"Harold", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572", "controller"=>"teachers", "action"=>"update", "teacher"=>{"id"=>"1", "first_name"=>"Harold", "last_name"=>"Gerhold", "email"=>"alena.kuvalis@sipes.io", "phone_number"=>"+223 1-178-662-3572"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/teachers_controller.rb:29:in `update'
+  [1m[36mTeacher Update (0.3ms)[0m  [1m[33mUPDATE "teachers" SET "first_name" = ?, "updated_at" = ? WHERE "teachers"."id" = ?[0m  [["first_name", "Harold"], ["updated_at", "2023-03-31 06:45:50.591318"], ["id", 1]]
+  ↳ app/controllers/teachers_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (201.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/teachers_controller.rb:29:in `update'
+Completed 200 OK in 220ms (Views: 0.9ms | ActiveRecord: 201.8ms | Allocations: 4959)
+
+
+Started POST "/teachers" for 127.0.0.1 at 2023-03-31 09:46:26 +0300
+Processing by TeachersController#create as */*
+  Parameters: {"first_name"=>"Harold", "last_name"=>"Gundason", "email"=>"alena.kuvali@sipes.io", "phone_number"=>"+223 1-178-662-3572", "teacher"=>{"first_name"=>"Harold", "last_name"=>"Gundason", "email"=>"alena.kuvali@sipes.io", "phone_number"=>"+223 1-178-662-3572"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/teachers_controller.rb:20:in `create'
+  [1m[36mTeacher Create (0.4ms)[0m  [1m[32mINSERT INTO "teachers" ("first_name", "last_name", "email", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Harold"], ["last_name", "Gundason"], ["email", "alena.kuvali@sipes.io"], ["phone_number", "+223 1-178-662-3572"], ["created_at", "2023-03-31 06:46:26.918258"], ["updated_at", "2023-03-31 06:46:26.918258"]]
+  ↳ app/controllers/teachers_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (123.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/teachers_controller.rb:20:in `create'
+Completed 201 Created in 130ms (Views: 1.0ms | ActiveRecord: 123.5ms | Allocations: 2113)
+
+
+Started POST "/teachers/31" for 127.0.0.1 at 2023-03-31 09:47:00 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/teachers/31"):
+  
+Started GET "/teachers/31" for 127.0.0.1 at 2023-03-31 09:47:06 +0300
+Processing by TeachersController#show as */*
+  Parameters: {"id"=>"31"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+  [1m[36mCACHE Teacher Load (0.0ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:12:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1013)
+
+
+Started DELETE "/teachers/31" for 127.0.0.1 at 2023-03-31 09:48:15 +0300
+Processing by TeachersController#destroy as */*
+  Parameters: {"id"=>"31", "first_name"=>"Harold", "last_name"=>"Gundason", "email"=>"alena.kuvali@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-31T06:46:26.918Z", "updated_at"=>"2023-03-31T06:46:26.918Z", "teacher"=>{"id"=>"31", "first_name"=>"Harold", "last_name"=>"Gundason", "email"=>"alena.kuvali@sipes.io", "phone_number"=>"+223 1-178-662-3572", "created_at"=>"2023-03-31T06:46:26.918Z", "updated_at"=>"2023-03-31T06:46:26.918Z"}}
+  [1m[36mTeacher Load (0.2ms)[0m  [1m[34mSELECT "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/teachers_controller.rb:44:in `set_teacher'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mForm Load (0.1ms)[0m  [1m[34mSELECT "forms".* FROM "forms" WHERE "forms"."teacher_id" = ?[0m  [["teacher_id", 31]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mTeacher Destroy (0.2ms)[0m  [1m[31mDELETE FROM "teachers" WHERE "teachers"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (132.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/teachers_controller.rb:38:in `destroy'
+Completed 204 No Content in 161ms (ActiveRecord: 133.4ms | Allocations: 13264)
+
+
