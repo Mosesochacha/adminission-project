@@ -3,14 +3,22 @@ class UsersController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
 
   def create
-    user = User.create!(user_params)
-    if user.valid?
+    begin
+      user = User.new(user_params)
+      user.password = params[:password]
+      user.password_confirmation = params[:password_confirmation]
+      user.save!
+  
       session[:user_id] = user.id
-      render json: user, status: :created
-    else
-      render json: { errors: users.errors.full_messages }, status: :unprocessable_entity
+      render json: { status: :created, message: "User successfully registered", user: user }
+    rescue ActiveRecord::RecordInvalid => e
+      render json: { errors: e.record.errors.full_messages }, status: :unprocessable_entity
+    rescue ActiveRecord::RecordNotUnique => e
+      render json: { errors: [e.message] }, status: :unprocessable_entity
     end
   end
+  
+  
 
   def show
     user = User.find(session[:user_id])
@@ -20,8 +28,9 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.permit(:username, :email, :password, :password_confirmation)
+    params.require(:user).permit(:username, :email, :password, :password_confirmation)
   end
+  
 
   def record_invalid(invalid)
     render json: { errors: invalid.record.errors.full_messages }, status: :unprocessable_entity
