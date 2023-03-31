@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import "./styles.css";
-import { BrowserRouter, Route, } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
-import Registration from "./app/components/forminput/Registration";
+
 import Login from "./app/components/user/Login"
 import Register from "./app/components/user/Register";
-
+import StudentRegistration from "./app/components/forminput/StudentRegistration";
 
 export default function App() {
   return (
@@ -38,12 +38,14 @@ export default function App() {
 
         {/* contact us */}
 
-        <Route exact path="/contact us">
+        <Route exact path="/contact">
           <Contact />
         </Route>
 
- <Route exact path ="/courses">
-          <Service/>
+        <Route exact path="/courses">
+          <Service />
+        </Route> 
+        {/* closing tag added */}
 
         <Route exact path="/Signup">
           <Register />
@@ -52,12 +54,12 @@ export default function App() {
         {/* Login */}
         <Route exact path="/Login">
           <Login />
-          </Route>
+        </Route>
 
-          {/* Register */}
+        {/* Register */}
         <Route exact path="/Register">
           <Register />
-          </Route>
+        </Route>
 
       </BrowserRouter>
 

@@ -22,8 +22,7 @@ export default function Register() {
     e.preventDefault();
     setError("");
     setIsRegistering(true);
-    const response = await fetch("API",
-      {
+    const response = await fetch("", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -88,12 +87,12 @@ export default function Register() {
               onChange={(e) => setPasswordConfirmation(e.target.value)}
             />
             
-            <input type="submit" value="Register" />
+
             <div onClick={handleSubmit}>
             <button type="submit">Register</button>
             </div>
 
-            <button type="submit">Register</button>
+
             <p>
               Are you a member? <NavLink to="/login">Login</NavLink>
             </p>
