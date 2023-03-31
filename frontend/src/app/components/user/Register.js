@@ -23,17 +23,17 @@ export default function Register() {
     setError("");
     setIsRegistering(true);
     const response = await fetch("", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          password,
-          password_confirmation: passwordConfirmation,
-        }),
-      }
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        password,
+        password_confirmation: passwordConfirmation,
+      }),
+    }
     );
     const data = await response.json();
     if (data.message) {
@@ -45,14 +45,14 @@ export default function Register() {
       setIsRegistering(false);
     }
   };
-  
+
 
   return (
     <center className="">
-       
+
       <div className="d-flex flex-column mb-3" style={{ width: "20rem" }}>
         <div className="card ">
-        <form onSubmit={handleSubmit} className="d-flex flex-column mb-3">
+          <form onSubmit={handleSubmit} className="d-flex flex-column mb-3">
             <h1>Register</h1>
             <label>USERNAME</label>
             <input
@@ -62,7 +62,7 @@ export default function Register() {
               onChange={(e) => setName(e.target.value)}
             />
 
-           
+
 
             <label>Email: </label>
             <input
@@ -86,24 +86,17 @@ export default function Register() {
               value={passwordConfirmation}
               onChange={(e) => setPasswordConfirmation(e.target.value)}
             />
-            
 
-            <div onClick={handleSubmit}>
             <button type="submit">Register</button>
-            </div>
-
-
             <p>
               Are you a member? <NavLink to="/login">Login</NavLink>
             </p>
-            
-
             {message && <p>{message}</p>}
             {error && <p>{error}</p>}
-            </form>
+          </form>
         </div>
       </div>
-     
+
     </center>
   );
 }
