@@ -38,11 +38,11 @@ export default function App() {
 
         {/* contact us */}
 
-        <Route exact path="/contact">
+        <Route exact path="/contacts">
           <Contact />
         </Route>
 
-        <Route exact path="/courses">
+        <Route exact path="/course">
           <Service />
         </Route> 
         {/* closing tag added */}
