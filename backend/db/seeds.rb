@@ -28,6 +28,7 @@ end
     last_name: Faker::Name.last_name,
     gender: Faker::Gender.binary_type,
     email: Faker::Internet.email,
+    form: Faker::Number.between(from: 1, to: 4),
     image: Faker::LoremFlickr.image(size: "300x300", search_terms: ['student']),
     date_of_birth: Faker::Date.between(from: '1980-01-01', to: '2004-12-31'),
     admission_year: Faker::Number.between(from: 2015, to: 2021),

@@ -72,6 +72,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_30_175417) do
     t.string "last_name"
     t.string "gender"
     t.string "email"
+    t.integer "form"
     t.string "image"
     t.date "date_of_birth"
     t.integer "admission_year"

@@ -1,8 +1,10 @@
 class AdmissionsController < ApplicationController
   def index
-     admission = Admission.all
-     render json: admission
+    admissions = Admission.includes(:student).order(created_at: :desc)
+    render json: admissions.as_json(include: { student: { only: [:name, :class] }})
   end
+  
+  
   def update
     @admission = Admission.find(params[:id])
     @admission.update(admission_params)
@@ -15,6 +17,7 @@ class AdmissionsController < ApplicationController
 
     render json: { message: 'Admission updated successfully' }, status: :ok
   end
+  
   def create
     
   end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :forms
   resources :courses
+  resources :teachers, only:[:index , :show , :create , :update , :destroy], param: :id
   resources :students, only: [:index, :create, :update], param: :id
   resources :admissions, only: %i[index update create]
   # Routes for users
@@ -10,7 +11,5 @@ Rails.application.routes.draw do
   delete '/logout', to: "sessions#destroy"
   post '/register' , to: "users#create"
 
-  #Routes For Teachers
-  get  "/teacher", to: "teachers#index"
 end
 
