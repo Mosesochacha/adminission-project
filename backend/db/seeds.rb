@@ -6,6 +6,7 @@ puts "Seeding records..."
   User.create!(
     email: Faker::Internet.email,
     password: "password",
+    role: ["Admin", "Teacher", "Student"].sample,
     username: Faker::Internet.username
   )
 end

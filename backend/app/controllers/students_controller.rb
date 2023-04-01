@@ -64,7 +64,8 @@ class StudentsController < ApplicationController
       :gender,
       :date_of_birth,
       :admission_year,
-      :email
+      :email,
+      :form
     )
   end
 end
