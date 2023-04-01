@@ -82,3 +82,18 @@ I, [2023-04-01T21:43:06.177614 #28606]  INFO -- : Migrating to CreateCoursesStud
 I, [2023-04-01T21:43:06.531581 #28606]  INFO -- : Migrating to CreateJoinTableCourseTeacher (20230401131448)
 I, [2023-04-01T21:43:06.874483 #28606]  INFO -- : Migrating to CreateCourseTeachers (20230401132846)
 I, [2023-04-01T21:43:07.206488 #28606]  INFO -- : Migrating to CreateCourseStudents (20230401132858)
+W, [2023-04-02T00:06:43.922368 #40069]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2023-04-02T00:07:04.944932 #40126]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2023-04-02T00:07:05.829204 #40126]  INFO -- : Migrating to CreateUsers (20230328082018)
+I, [2023-04-02T00:07:06.052060 #40126]  INFO -- : Migrating to CreateStudents (20230329055638)
+I, [2023-04-02T00:07:06.383887 #40126]  INFO -- : Migrating to CreateAdmissions (20230329070059)
+I, [2023-04-02T00:07:06.596028 #40126]  INFO -- : Migrating to CreateTeachers (20230329071247)
+I, [2023-04-02T00:07:06.807775 #40126]  INFO -- : Migrating to CreateCourses (20230329071551)
+I, [2023-04-02T00:07:07.020041 #40126]  INFO -- : Migrating to CreateForms (20230329170647)
+I, [2023-04-02T00:07:07.231961 #40126]  INFO -- : Migrating to AddStatus (20230329213205)
+I, [2023-04-02T00:07:07.434237 #40126]  INFO -- : Migrating to AddAdmissionStatusToStudent (20230330093159)
+I, [2023-04-02T00:07:07.663839 #40126]  INFO -- : Migrating to CreateDelayedJobs (20230330175417)
+I, [2023-04-02T00:07:07.897948 #40126]  INFO -- : Migrating to CreateCoursesStudents (20230401130404)
+I, [2023-04-02T00:07:08.110082 #40126]  INFO -- : Migrating to CreateJoinTableCourseTeacher (20230401131448)
+I, [2023-04-02T00:07:08.502125 #40126]  INFO -- : Migrating to CreateCourseTeachers (20230401132846)
+I, [2023-04-02T00:07:08.944184 #40126]  INFO -- : Migrating to CreateCourseStudents (20230401132858)
