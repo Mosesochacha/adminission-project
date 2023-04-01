@@ -8,6 +8,7 @@ import Login from "./components/user/Login";
 import Register from "./components/user/Register";
 import AllStudents from "./components/studentportal/Allstudents";
 import StudentPortal from "./components/studentportal/StudentPortal";
+import Students from "./components/forminput/Students";
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/allstudent" component={AllStudents} />
           <Route exact path="/portal" component={StudentPortal}/>
+          <Route exact path="/students" component={Students}/>
           <Route component={Loading} />
+
         </Switch>
       </Router>
     </div>

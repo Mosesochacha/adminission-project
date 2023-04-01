@@ -9,6 +9,7 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [error, setError] = useState("");
+  const [role, setRole] = useState("");
   const [isRegistering, setIsRegistering] = useState(false);
   const [cachedResponse, setCachedResponse] = useState({});
   const history = useHistory();
@@ -62,6 +63,7 @@ export default function Register() {
         email,
         password,
         password_confirmation: passwordConfirmation,
+        role,
       }),
     });
     const { message, errors } = await response.json();
@@ -113,6 +115,14 @@ export default function Register() {
             value={passwordConfirmation}
             onChange={handleInputChange}
           />
+          <label>Select your role</label>
+          <select onChange={(e) => setRole(e.target.value)}>
+            <option value="">Select your role</option>
+            <option value="Admin">Admin</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+          </select>
+          
           <button type="submit">
             {isRegistering ? "Registering..." : "Register"}
           </button>
