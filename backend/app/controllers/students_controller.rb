@@ -16,9 +16,6 @@ class StudentsController < ApplicationController
     end
   end
 
-
- 
-
   def update
     @admission = Admission.find(params[:id])
     @student = @admission.student # add this line
@@ -28,6 +25,7 @@ class StudentsController < ApplicationController
       status: params[:status], 
       course_id: params[:course_id], 
       student_id: @student.id
+      form: params[:form]
     )
    
     if @admission.status == 'accepted'
@@ -35,12 +33,26 @@ class StudentsController < ApplicationController
     elsif @admission.status == 'declined'
       NewAdmissionMailer.with(student: @student).declined_email(@student).deliver_now
 
-       # Schedule deletion of student along with associated records after 1 hour
-       @admission.delay.delete_student_after_one_hour
+      # Schedule deletion of student along with associated records after specified hours
+      #  admission.delay.delete_student_after_one_hour
+      
+      # Schedule deletion of student along with associated records after specified seconds
+      @admission.delete_student_after_three_seconds
     end
     
     render json: { admission: @admission }, status: :ok
   end
+
+  def destroy
+    @student = Student.find(params[:id])
+    @student.destroy
+    redirect_to delete_student_path(@student), notice: "Student successfully deleted."
+  end
+
+  
+  
+  
+ 
  
   private
 

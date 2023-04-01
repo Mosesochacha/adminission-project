@@ -1,5 +1,8 @@
 class Course < ApplicationRecord
-  has_and_belongs_to_many :students , dependent: :destroy
-  has_and_belongs_to_many :teachers ,dependent: :destroy
+  has_many :course_students, dependent: :destroy
+  has_many :students, through: :course_students
+  
+  has_many :course_teachers, dependent: :destroy
+  has_many :teachers, through: :course_teachers
   has_many :forms
 end

@@ -6,8 +6,8 @@ class CreateCourses < ActiveRecord::Migration[7.0]
       t.integer :year
       t.integer :term
       t.string   :title
-      t.references :student, foreign_key: true, index: true
-      t.references :teacher, foreign_key: true, index: true
+      # t.references :student, foreign_key: true, index: true
+      # t.references :teacher, foreign_key: true, index: true
       t.timestamps
     end
   end

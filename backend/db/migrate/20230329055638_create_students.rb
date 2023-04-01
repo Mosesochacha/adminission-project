@@ -9,7 +9,6 @@ class CreateStudents < ActiveRecord::Migration[7.0]
       t.string :image
       t.date :date_of_birth
       t.integer :admission_year
-
       t.timestamps
     end
   end
