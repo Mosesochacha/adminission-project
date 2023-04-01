@@ -27,7 +27,7 @@ end
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     gender: Faker::Gender.binary_type,
-    email: Faker::Internet.email,
+    # email: Faker::Internet.email,
     form: Faker::Number.between(from: 1, to: 4),
     image: Faker::LoremFlickr.image(size: "300x300", search_terms: ['student']),
     date_of_birth: Faker::Date.between(from: '1980-01-01', to: '2004-12-31'),
@@ -51,10 +51,25 @@ titles = []
     description: Faker::Lorem.sentence(word_count: 10),
     year: Faker::Number.between(from: 1, to: 5),
     term: Faker::Number.between(from: 1, to: 3),
-    student_id: Faker::Number.between(from: 1, to: 20),
-    teacher_id: Faker::Number.between(from: 1, to: 5)
+    
   )
 end
+
+# Create course_teachers join table records
+Course.all.each do |course|
+  teacher = Teacher.all.sample
+  course.teachers << teacher
+end
+
+
+# Create course_students join table records
+Course.all.each do |course|
+  5.times do
+    student = Student.all.sample
+    course.students << student
+  end
+end
+
 
 # Create some admissions
 30.times do

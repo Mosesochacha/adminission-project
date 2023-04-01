@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_30_175417) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_01_132858) do
   create_table "admissions", force: :cascade do |t|
     t.date "admission_date"
     t.string "admission_number"
@@ -23,18 +23,46 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_30_175417) do
     t.index ["student_id"], name: "index_admissions_on_student_id"
   end
 
+  create_table "course_students", force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.integer "student_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_course_students_on_course_id"
+    t.index ["student_id"], name: "index_course_students_on_student_id"
+  end
+
+  create_table "course_teachers", force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.integer "teacher_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_course_teachers_on_course_id"
+    t.index ["teacher_id"], name: "index_course_teachers_on_teacher_id"
+  end
+
   create_table "courses", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.integer "year"
     t.integer "term"
     t.string "title"
-    t.integer "student_id"
-    t.integer "teacher_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["student_id"], name: "index_courses_on_student_id"
-    t.index ["teacher_id"], name: "index_courses_on_teacher_id"
+  end
+
+  create_table "courses_students", force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.integer "student_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_courses_students_on_course_id"
+    t.index ["student_id"], name: "index_courses_students_on_student_id"
+  end
+
+  create_table "courses_teachers", id: false, force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.integer "teacher_id", null: false
   end
 
   create_table "delayed_jobs", force: :cascade do |t|
@@ -101,8 +129,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_30_175417) do
 
   add_foreign_key "admissions", "courses"
   add_foreign_key "admissions", "students"
-  add_foreign_key "courses", "students"
-  add_foreign_key "courses", "teachers"
+  add_foreign_key "course_students", "courses"
+  add_foreign_key "course_students", "students"
+  add_foreign_key "course_teachers", "courses"
+  add_foreign_key "course_teachers", "teachers"
+  add_foreign_key "courses_students", "courses"
+  add_foreign_key "courses_students", "students"
   add_foreign_key "forms", "admissions"
   add_foreign_key "forms", "courses"
   add_foreign_key "forms", "teachers"
