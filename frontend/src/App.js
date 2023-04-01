@@ -6,6 +6,8 @@ import Contact from "./components/casey/routes/Contact";
 import Loading from "./components/loading/loader";
 import Login from "./components/user/Login";
 import Register from "./components/user/Register";
+import AllStudents from "./components/studentportal/Allstudents";
+import StudentPortal from "./components/studentportal/StudentPortal";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route exact path="/contacts" component={Contact} />
           <Route exact path="/signup" component={Register} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/allstudent" component={AllStudents} />
+          <Route exact path="/portal" component={StudentPortal}/>
           <Route component={Loading} />
         </Switch>
       </Router>
