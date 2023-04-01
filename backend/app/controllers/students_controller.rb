@@ -23,9 +23,10 @@ class StudentsController < ApplicationController
       admission_date: params[:admission_date], 
       admission_number: params[:admission_number], 
       status: params[:status], 
+      form: params[:form],
       course_id: params[:course_id], 
       student_id: @student.id
-      form: params[:form]
+      
     )
    
     if @admission.status == 'accepted'
