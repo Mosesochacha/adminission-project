@@ -6,6 +6,12 @@ import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 import Navbar from "./components/Navbar";
+import TeacherList from "./components/Teachers/TeacherList";
+import CreateTeacherForm from "./components/Teachers/CreateTeacher";
+// import UpdateTeacherForm from "./components/Teachers/UpdateTeachers";
+// import DeleteTeacher from "./components/Teachers/DeleteTeacher";
+
+
 
 export default function App() {
   return (
@@ -41,6 +47,20 @@ export default function App() {
         <Route exact path="/contact us">
           <Contact/>
         </Route>
+
+        <Route exact path="/teachers">
+          <TeacherList />
+        </Route>
+
+        <Route exact path="/teachers/create">
+          <CreateTeacherForm />
+        </Route>
+
+        {/* <Route exact path="/teachers/:id" component={UpdateTeacherForm} /> */}
+
+        {/* <Route exact path="/teachers/:id/delete">
+          <DeleteTeacher />
+        </Route> */}
 
 
       </BrowserRouter>
