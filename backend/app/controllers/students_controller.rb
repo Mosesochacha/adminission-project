@@ -1,9 +1,9 @@
 class StudentsController < ApplicationController
-
   def index
-    students = Student.all
-    render json: students
+    students = Student.includes(:admissions).order(created_at: :desc)
+    render json: students.as_json(include: :admissions)
   end
+  
   def create
     @student = Student.new(student_params)
     @admission = @student.admissions.build(admission_date: params[:admission_date], admission_number: params[:admission_number], status: params[:status] || 'waiting', course_id: params[:course_id])
