@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_01_132858) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_02_145812) do
   create_table "admissions", force: :cascade do |t|
     t.date "admission_date"
     t.string "admission_number"
@@ -126,6 +126,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_01_132858) do
     t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
   end
 
   add_foreign_key "admissions", "courses"

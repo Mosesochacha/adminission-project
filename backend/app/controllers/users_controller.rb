@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
-
+ def index
+  user = User.all 
+render json: user
+ end
   def create
     begin
       user = User.new(user_params)
