@@ -1,6 +1,6 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-// import Footer from "../components/Footer";
+import Footer from "./Footer";
 import AboutUs from "./AboutUs";
 
 function About() {
@@ -16,6 +16,7 @@ function About() {
 
         />
        <AboutUs/>
+       <Footer />
     </>
   );
 }
