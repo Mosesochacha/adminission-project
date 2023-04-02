@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 
-
 export default function Login() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -9,6 +8,7 @@ export default function Login() {
   const [error, setError] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoggingIn, setIsLoggingIn] = useState(false);
+
   const history = useHistory();
 
   const handleLogin = async (e) => {
@@ -38,30 +38,6 @@ export default function Login() {
     }
   };
 
-  const handleResetPassword = async (e) => {
-    e.preventDefault();
-    const res = await fetch(
-      "https://admn-wzcg.onrender.com/r/reset-password",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-        }),
-      }
-    );
-    const data = await res.json();
-    if (data.message) {
-      setMessage(data.message);
-    } else {
-      setMessage("");
-      setError(data.error);
-    }
-    setIsLoggingIn(false);
-  };
-
   if (isLoggedIn) {
     history.push("/home");
   }
@@ -88,11 +64,10 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
               <br />
-              
               <center>
-              <button type="submit" disabled={isLoggingIn}>
-            {isLoggingIn ? "LoggingIn..." : "LOGIN"}
-          </button>
+                <button type="submit" disabled={isLoggingIn}>
+                  {isLoggingIn ? "LoggingIn..." : "LOGIN"}
+                </button>
                 <br />
                 <div>
                   {message && <p>{message}</p>}
@@ -112,13 +87,19 @@ export default function Login() {
                 </p>
                 <p>
                   Forgot your password?{" "}
-                  <a href="reset" onClick={handleResetPassword}>
+                  <NavLink
+                    to="/send-code"
+                    className="link
+"
+                    style={{ color: "blue" }}
+                  >
                     Reset it here
-                  </a>
+                  </NavLink>
                 </p>
               </center>
             </div>
           </div>
+         
         </form>
       </div>
     </center>
