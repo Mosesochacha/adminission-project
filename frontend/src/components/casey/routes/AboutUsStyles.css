@@ -1,0 +1,16 @@
+/* Style your components */
+.about-container{
+    margin: 4rem 6rem;
+    text-align: start;
+}
+
+/* Style your components */
+.about-container h1{
+    padding-bottom: 1rem;
+}
+
+.about-container p{
+    padding-bottom: 2rem;
+
+}
+
