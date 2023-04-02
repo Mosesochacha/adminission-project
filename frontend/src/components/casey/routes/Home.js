@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Destination from "./Destination";
 import Footer from "./Footer";
 import Hero from "./Hero";
