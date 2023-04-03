@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 import "./StudentPortal.css";
 
 const StudentPortal = () => {

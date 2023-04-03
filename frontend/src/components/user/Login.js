@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 
 export default function Login() {
@@ -28,9 +28,6 @@ export default function Login() {
     if (data.message) {
       setMessage(data.message);
       setIsLoggedIn(true);
-
-
-      window.location.reload();
     } else {
       setMessage("");
       setError(data.errors);
@@ -39,9 +36,12 @@ export default function Login() {
     }
   };
 
-  if (isLoggedIn) {
-    history.push("/home");
-  }
+  useEffect(() => {
+    if (isLoggedIn) {
+      history.push("/teachers");
+      window.location.reload();
+    }
+  }, [isLoggedIn, history]);
 
   return (
     <center className="mt-5 ">
@@ -100,7 +100,6 @@ export default function Login() {
               </center>
             </div>
           </div>
-         
         </form>
       </div>
     </center>

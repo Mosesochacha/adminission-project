@@ -14,7 +14,7 @@ function TeacherList() {
             last_name: teacher.last_name,
             email: teacher.email,
             phone_number: teacher.phone_number,
-            image: 'https://loremflickr.com/300/300/teacher'
+            // image: 'https://loremflickr.com/300/300/teacher'
           }
         });
         setTeachers(modifiedData);
@@ -27,16 +27,28 @@ function TeacherList() {
   return (
     <div>
       <h1>Teachers</h1>
-      <div className="card-container">
-        {teachers.map(teacher => (
-          <div key={teacher.id} className="card">
-            <img src={teacher.image} alt={teacher.first_name} />
-            <h2>{teacher.first_name} {teacher.last_name}</h2>
-            <p>Email: {teacher.email}</p>
-            <p>Phone Number: {teacher.phone_number}</p>
-          </div>
-        ))}
-      </div>
+      <table>
+        <thead>
+          <tr>
+            {/* <th>ID</th> */}
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          {teachers.map(teacher => (
+            <tr key={teacher.id}>
+              {/* <td>{teacher.id}</td> */}
+              <td>{teacher.first_name}</td>
+              <td>{teacher.last_name}</td>
+              <td>{teacher.email}</td>
+              <td>{teacher.phone_number}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

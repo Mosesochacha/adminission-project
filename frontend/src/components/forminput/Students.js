@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Students.css";
 
 function Students() {
@@ -10,21 +11,36 @@ function Students() {
   const [admission_year, setAdmissionYear] = useState("");
   const [form, setForm] = useState("");
 
-  const handleSubmit =  (event) => {
-    event.preventDefault();
+  const history = useHistory();
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify
-      ({
-        first_name,last_name,email,gender,date_of_birth,admission_year,form
+      body: JSON.stringify({
+        first_name,
+        last_name,
+        email,
+        gender,
+        date_of_birth,
+        admission_year,
+        form,
       }),
     };
 
-    fetch("https://admn-wzcg.onrender.com/students", requestOptions)
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+    try {
+      const response = await fetch(
+        "https://admn-wzcg.onrender.com/students",
+        requestOptions
+      );
+      const data = await response.json();
+      console.log(data);
+      history.push("/allstudents");
+    } catch (error) {
+      console.error(error);
+      // do something to handle the error, e.g. show an error message to the user
+    }
   };
 
   return (

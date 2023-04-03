@@ -97,3 +97,21 @@ I, [2023-04-02T00:07:07.897948 #40126]  INFO -- : Migrating to CreateCoursesStud
 I, [2023-04-02T00:07:08.110082 #40126]  INFO -- : Migrating to CreateJoinTableCourseTeacher (20230401131448)
 I, [2023-04-02T00:07:08.502125 #40126]  INFO -- : Migrating to CreateCourseTeachers (20230401132846)
 I, [2023-04-02T00:07:08.944184 #40126]  INFO -- : Migrating to CreateCourseStudents (20230401132858)
+W, [2023-04-03T12:41:42.379038 #28180]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2023-04-03T12:42:13.147323 #28184]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2023-04-03T12:42:24.505830 #28186]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2023-04-03T12:42:24.628031 #28186]  INFO -- : Migrating to CreateUsers (20230328082018)
+I, [2023-04-03T12:42:24.851062 #28186]  INFO -- : Migrating to CreateStudents (20230329055638)
+I, [2023-04-03T12:42:24.985338 #28186]  INFO -- : Migrating to CreateAdmissions (20230329070059)
+I, [2023-04-03T12:42:25.120160 #28186]  INFO -- : Migrating to CreateTeachers (20230329071247)
+I, [2023-04-03T12:42:25.287144 #28186]  INFO -- : Migrating to CreateCourses (20230329071551)
+I, [2023-04-03T12:42:25.421591 #28186]  INFO -- : Migrating to CreateForms (20230329170647)
+I, [2023-04-03T12:42:25.555702 #28186]  INFO -- : Migrating to AddStatus (20230329213205)
+I, [2023-04-03T12:42:25.665388 #28186]  INFO -- : Migrating to AddAdmissionStatusToStudent (20230330093159)
+I, [2023-04-03T12:42:26.028004 #28186]  INFO -- : Migrating to CreateDelayedJobs (20230330175417)
+I, [2023-04-03T12:42:26.217289 #28186]  INFO -- : Migrating to CreateCoursesStudents (20230401130404)
+I, [2023-04-03T12:42:26.351342 #28186]  INFO -- : Migrating to CreateJoinTableCourseTeacher (20230401131448)
+I, [2023-04-03T12:42:26.485645 #28186]  INFO -- : Migrating to CreateCourseTeachers (20230401132846)
+I, [2023-04-03T12:42:26.620005 #28186]  INFO -- : Migrating to CreateCourseStudents (20230401132858)
+I, [2023-04-03T12:42:26.776361 #28186]  INFO -- : Migrating to AddResetPasswordTokenToUsers (20230402145809)
+I, [2023-04-03T12:42:26.885974 #28186]  INFO -- : Migrating to AddResetPasswordSentAtToUsers (20230402145812)

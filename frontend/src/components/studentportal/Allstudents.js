@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./StudentPortal.css";
 import axios from "axios";
 
+
 export default function AllStudents(params) {
   const [students, setStudents] = useState([]);
 
@@ -87,6 +88,7 @@ export default function AllStudents(params) {
 
   return (
     <div> 
+     
       <h1>Students</h1>
       <table>
         <thead>

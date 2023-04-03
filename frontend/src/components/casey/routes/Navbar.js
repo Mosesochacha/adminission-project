@@ -1,8 +1,7 @@
-
 import React, { Component } from "react";
 import "./NavbarStyles.css";
 import { MenuItems } from "../MenuItems";
-import { Link, NavLink } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class Navbar extends Component {
   constructor(props) {
@@ -40,13 +39,15 @@ class Navbar extends Component {
             );
           })}
           <li>
-            <button><NavLink to="/signup">Sign Up</NavLink></button>
+            <button onClick={() => this.props.history.push("/signup")}>
+              Sign Up
+            </button>
           </li>
         </ul>
+    
       </nav>
     );
   }
 }
 
-export default Navbar;
- 
+export default withRouter(Navbar);
