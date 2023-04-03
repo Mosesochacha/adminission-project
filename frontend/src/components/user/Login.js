@@ -28,7 +28,8 @@ export default function Login() {
     if (data.message) {
       setMessage(data.message);
       setIsLoggedIn(true);
-      history.push("/home");
+
+
       window.location.reload();
     } else {
       setMessage("");
@@ -88,7 +89,7 @@ export default function Login() {
                 <p>
                   Forgot your password?{" "}
                   <NavLink
-                    to="/send-code"
+                    to="/reset-password"
                     className="link
 "
                     style={{ color: "blue" }}
