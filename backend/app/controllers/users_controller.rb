@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
+  # before_action :require_admin, only: [:index, :create, :show]
+  # before_action :require_student_or_teacher, only: [:index, :create, :show]
+
  def index
   user = User.all 
 render json: user

@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get  'users' , to: "users#index"
   delete 'students', to: 'students#destroy'
   post '/reset_password', to: 'password_resets#create'
+  get '/reset_password/:token/edit', to: 'password_resets#edit', as: :edit_password_reset
+  patch '/reset_password/:token', to: 'password_resets#update', as: :update_password_reset
 
 
 end

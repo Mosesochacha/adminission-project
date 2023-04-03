@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :user_not_found
   rescue_from CustomExceptions::AuthenticationError, with: :invalid_password
+ 
 
   def authenticate
     user = User.find_by(email: params[:email])

@@ -1,5 +1,5 @@
 class TeachersController < ApplicationController
-  before_action :set_teacher, only: %i[show update destroy]
+
 
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 

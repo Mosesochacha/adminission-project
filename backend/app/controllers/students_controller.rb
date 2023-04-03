@@ -1,4 +1,6 @@
 class StudentsController < ApplicationController
+
+
   def index
     students = Student.includes(:admissions).order(created_at: :desc)
     render json: students.as_json(include: :admissions)

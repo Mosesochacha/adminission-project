@@ -1,6 +1,7 @@
 class FormsController < ApplicationController
   before_action :set_form, only: %i[ show update destroy ]
 
+
   # GET /forms
   def index
     forms = Form.all
