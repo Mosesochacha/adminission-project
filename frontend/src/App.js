@@ -11,8 +11,8 @@ import StudentPortal from "./components/studentportal/StudentPortal";
 import Students from "./components/forminput/Students";
 import TeacherList from "./components/Teachers/TeacherList";
 import CreateTeacherForm from "./components/Teachers/CreateTeacher";
-import SendCode from "./components/user/sendemail";
-import ResetPassword from "./components/user/reset";
+import ResetPassword from "./components/user/resetpassword";
+
 
 function App() {
   return (
@@ -27,12 +27,11 @@ function App() {
           <Route exact path="/signup" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/allstudent" component={AllStudents} />
-          <Route exact path="/portal" component={StudentPortal}/>
-          <Route exact path="/students" component={Students}/>
-          <Route exact path="/teachers" component={TeacherList}/>
-          <Route exact path="/send-code" component={SendCode} />
-        <Route exact path="/reset-password" component={ResetPassword} />
+          <Route exact path="/portal" component={StudentPortal} />
+          <Route exact path="/students" component={Students} />
+          <Route exact path="/teachers" component={TeacherList} />
           <Route exact path="/teachers/create" component={CreateTeacherForm} />
+          <Route exact path="/reset-password" component={ResetPassword} />
           <Route component={Loading} />
 
         </Switch>
