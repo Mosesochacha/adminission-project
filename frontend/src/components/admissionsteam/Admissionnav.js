@@ -11,6 +11,7 @@ export default function NavbarHome(params) {
           <NavLink exact activeClassName="active" to="/teachers">Teachers</NavLink>
           <NavLink exact activeClassName="active" to="/portal">Student Portal</NavLink>
           <NavLink exact activeClassName="active" to="/allstudents">All Students</NavLink>
+          <NavLink to="/home">LOGOUT</NavLink>
         </div>
       </div>
     </div>
